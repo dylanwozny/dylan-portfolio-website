@@ -10,6 +10,8 @@ Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-
 
 ## GITHUB
 
-step 1: git commit -m "read me formatting"
+step 1: git add .
+
+step 2: git commit -m ""
 
 step 2: git push -u origin main
