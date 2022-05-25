@@ -1,7 +1,7 @@
-body{
-    background-color: red;
-}
+@use 'base';
+@use 'utilities';
+@use 'components';
+@use 'layout';
+@use 'pages';
 
-html{
-    background-color: green;
-}
+

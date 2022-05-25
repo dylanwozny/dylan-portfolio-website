@@ -1,0 +1,11 @@
+// as * removes namespace rule
+// importing from from index.scss
+@use '../utilities' as *;
+
+
+
+body{
+    
+    font-size: $font-size;
+    background-color: $primary-color;
+}
