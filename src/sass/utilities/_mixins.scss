@@ -1,0 +1,20 @@
+
+// button mixin
+@mixin buttonBg($bg,$border,$txt) {
+    background-color: $bg;
+    color: $txt;
+    border-color:$border;
+
+    &:hover {
+      background:darken($bg,18%);
+      border-color: darken($bg,18%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:lighten($bg,25%);
+    } 
+  }
+  
+// skill card
+
+// flex
