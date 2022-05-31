@@ -1,6 +1,5 @@
-
 // -------------color variables------------
-// Naming Convention: name it something that can still 
+// Naming Convention: name it something that can still
 // be accurate if color is changed.
 $primary-color: hsl(228, 26%, 18%);
 $secondary-color: hsl(48, 100%, 74%);
@@ -11,7 +10,22 @@ $white: hsl(0, 0%, 100%);
 $light-gray: hsl(0, 0%, 97%);
 $dark-gray: hsl(228, 5%, 19%);
 
-
 // -------------Layout variables------------
 
 $center: 0 auto;
+
+// --------URLs--------
+
+$font-url: "../assets/fonts/";
+
+// --------Typographic vars--------
+//SCALE: 1.5 a perfect fifth
+//Base: 16px;
+
+$txt-xxxl: 7.5rem;
+$txt-xxl: 5.063rem;
+$txt-xl: 3.375rem;
+$txt-lg: 2.25rem;
+$txt-md: 1.5rem;
+$txt-sml: 1rem;
+$txt-xs: 0.667rem;

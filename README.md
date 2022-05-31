@@ -10,6 +10,8 @@ compile command: 'npm start'
 
 Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
 
+STYLE GUIDE USED: https://google.github.io/styleguide/htmlcssguide.html
+
 ## GITHUB
 
 step 1: git add .

@@ -1,0 +1,167 @@
+@use "../utilities/vars" as *;
+
+/*------------------------------------*\
+  #FONT IMPORTS
+\*------------------------------------*/
+// FONT folder needs to be manually pasted into public assets
+
+@font-face {
+  font-family: "league_spartanbold";
+  src: url("#{$font-url}leaguespartan-bold-webfont.woff") format("woff"),
+    url("#{$font-url}leaguespartan-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "nerisblack";
+//   src: url("#{$font-url}neris-black-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-black-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "nerisblack_italic";
+//   src: url("#{$font-url}neris-blackitalic-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-blackitalic-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "nerisbold_italic";
+//   src: url("#{$font-url}neris-bolditalic-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-bolditalic-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "nerislight";
+  src: url("#{$font-url}neris-light-webfont.woff2") format("woff2"),
+    url("#{$font-url}neris-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: "nerislight_italic";
+//   src: url("#{$font-url}neris-lightitalic-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-lightitalic-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "nerissemibold";
+//   src: url("#{$font-url}neris-semibold-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-semibold-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: "nerissemibold_italic";
+//   src: url("#{$font-url}neris-semibolditalic-webfont.woff2") format("woff2"),
+//     url("#{$font-url}neris-semibolditalic-webfont.woff") format("woff");
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: "neristhin";
+  src: url("#{$font-url}neris-thin-webfont.woff2") format("woff2"),
+    url("#{$font-url}neris-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------------------*\
+  #Verical Rythem Grid
+\*------------------------------------*/
+
+html {
+  font-size: 100%;
+}
+
+body {
+  /** light vertical lines, transparent background **/
+  background-image: linear-gradient(#0ff 1px, transparent 1px);
+  /** auto (horizontal), 1.5rem - creates the vertical grid space **/
+  background-size: auto 1.5rem;
+}
+
+/* ListingCard.css */
+// .ListingCard { }
+// .ListingCard--featured { }
+// .ListingCard__title { }
+// .ListingCard__content { }
+
+//     .ListingCard is the “block” and represents the higher-level component
+//     .ListingCard__title is an “element” and represents a descendant of .ListingCard that helps compose the block as a whole.
+//     .ListingCard--featured is a “modifier” and represents a different state or variation on the .ListingCard block.
+
+// CLAMP()
+
+/*------------------------------------*\
+  #FONT STYLES
+\*------------------------------------*/
+h1,
+h2 {
+  font-family: "league_spartanbold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3,
+h4,
+.skill-card {
+  font-family: "neristhin";
+  font-weight: normal;
+  font-style: normal;
+}
+
+p {
+  font-family: "nerislight";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/*------------------------------------*\
+  #FONT SIZE, COLOR, AND SPACING
+\*------------------------------------*/
+
+h3,
+.skill-search-txt,
+.skill-card {
+  font-size: clamp($txt-md, 5vw, $txt-lg);
+}
+
+h3,
+.skill-search-txt,
+.banner-caption-txt {
+  color: $secondary-color;
+  line-height: 1.3333;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: clamp($txt-xl, 12vw, $txt-xxxl);
+  line-height: 1.4;
+  margin: 0rem 0rem 1.5rem 0rem;
+}
+
+h2,
+.banner-caption-txt {
+  font-size: clamp($txt-lg, 7vw, $txt-xl);
+  line-height: 1.3333;
+  margin-bottom: 3rem;
+}
+
+.skill-card {
+  figcaption {
+    line-height: 1.3333;
+  }
+}
