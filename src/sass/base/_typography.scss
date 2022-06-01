@@ -82,7 +82,7 @@
 \*------------------------------------*/
 
 html {
-  font-size: 100%;
+  font-size: $font-baseline;
 }
 
 body {
@@ -135,7 +135,7 @@ p {
 
 h3,
 .skill-search-txt,
-.skill-card {
+.skill-card{
   font-size: clamp($txt-md, 5vw, $txt-lg);
 }
 
@@ -144,24 +144,29 @@ h3,
 .banner-caption-txt {
   color: $secondary-color;
   line-height: 1.3333;
-  margin-bottom: 1.5rem;
 }
 
 h1 {
   font-size: clamp($txt-xl, 12vw, $txt-xxxl);
   line-height: 1.4;
-  margin: 0rem 0rem 1.5rem 0rem;
+  margin: 0rem;
 }
 
 h2,
 .banner-caption-txt {
   font-size: clamp($txt-lg, 7vw, $txt-xl);
   line-height: 1.3333;
-  margin-bottom: 3rem;
+  margin-bottom: $baseline-1;
 }
 
 .skill-card {
   figcaption {
     line-height: 1.3333;
   }
+}
+
+.nav-list{
+  font-size: $txt-md;
+  line-height: 2;
+
 }

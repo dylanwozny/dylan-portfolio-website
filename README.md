@@ -12,6 +12,8 @@ Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-
 
 STYLE GUIDE USED: https://google.github.io/styleguide/htmlcssguide.html
 
+AIRBNB: https://github.com/airbnb/css
+
 ## GITHUB
 
 step 1: git add .

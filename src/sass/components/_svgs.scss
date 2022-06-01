@@ -1,4 +1,13 @@
-svg{
-    width: 240px;
-    height: 240px;
+//https://css-tricks.com/scale-svg/
+// https://webdesign.tutsplus.com/tutorials/svg-viewport-and-viewbox-for-beginners--cms-30844
+// VIEWBOX on inline SVGs is like a viewing window. viewbox=" Panning [X][Y] Zooming [w][h] "
+
+svg {
+  width: 10rem;
+}
+
+.skill-card {
+  width: 15rem;
+  background-color: tomato;
+  height: 18rem;
 }
