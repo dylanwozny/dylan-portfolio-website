@@ -1,32 +1,35 @@
-@use '../utilities' as *;
+@use "../utilities" as *;
 
 // base button
 .btn {
-    text-decoration:none;
-    padding:1rem;
-    border-radius:10px;
-    font-size:$txt-md;
-    width: 10rem;
-    // margin: 0 auto;
-    display: block;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    border-width: 2px;
-    border-style: solid;
- 
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: $txt-md;
+  width: 10rem;
+  // margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
 }
 
 // button variations
-.btn-primary{
-    @include buttonBg($secondary-color,$secondary-color,$primary-color);
+.btn-primary {
+  @include buttonBg($secondary-color, $secondary-color, $primary-color);
 }
 
-.btn-secondary{
-    @include buttonBg($primary-color,$secondary-color,$secondary-color);
-    background-color: rgba(3, 3, 3, 0)
+.btn-secondary {
+  @include buttonBg($primary-color, $secondary-color, $secondary-color);
+  background-color: rgba(3, 3, 3, 0);
 }
 
-.btn-highlight{
-    @include buttonBg($dark-accent,$dark-accent,$light-gray);
+.btn-action {
+  @include buttonBg($primary-color, $primary-color, $light-gray, $true);
 }
 
+.btn-highlight {
+  @include buttonBg($dark-accent, $dark-accent, $light-gray, $true);
+}

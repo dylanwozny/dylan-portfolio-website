@@ -1,20 +1,31 @@
-
 // button mixin
-@mixin buttonBg($bg,$border,$txt) {
-    background-color: $bg;
-    color: $txt;
-    border-color:$border;
+// logic determines if border is shown when the hover fills in the background white
+@mixin buttonBg($bg, $border, $txt, $fill-border: false) {
+  background-color: $bg;
+  color: $txt;
+  border-color: $border;
 
+  @if $fill-border {
     &:hover {
-      background:darken($bg,18%);
-      border-color: darken($bg,18%);
+      border-color: $border;
+      background: $txt;
       transition: all 0.3s ease;
+      color: $bg;
     }
-    &:active {
-      background:lighten($bg,25%);
-    } 
+  } @else {
+    &:hover {
+      background: $txt;
+      border-color: $txt;
+      transition: all 0.3s ease;
+      color: $bg;
+    }
   }
-  
+
+  &:active {
+    background: lighten($bg, 25%);
+  }
+}
+
 // skill card
 
 // flex

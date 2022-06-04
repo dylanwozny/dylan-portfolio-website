@@ -1,0 +1,115 @@
+@use "../utilities" as *;
+
+/*------------------------------------*\
+  #hamburger button
+\*------------------------------------*/
+
+.nav-btn {
+  padding: 0.5rem;
+  position: fixed;
+  border-radius: 2px;
+  background-color: $white;
+  svg {
+    fill: $primary-color;
+    width: 2.5rem;
+  }
+}
+
+/*------------------------------------*\
+  #Link Menu Mobile
+\*------------------------------------*/
+
+.nav-menu {
+  position: fixed;
+  top: 0rem;
+  left: -15rem;
+  width: 7.5rem;
+  /* height: 30rem; */
+  background-color: $white;
+  transition: 0.5s;
+  padding: 1.5rem 0rem;
+  height: 100vh;
+  box-shadow: 1px 1px 15px $dark-gray;
+
+  svg {
+    width: 6rem;
+    margin-bottom: 4.5rem;
+    padding: 0rem;
+  }
+
+  .list-nav-arrow:hover {
+    background-color: $white;
+  }
+
+  .list-nav-arrow {
+    text-align: left;
+  }
+
+  .nav-logo:hover {
+    background-color: $white;
+  }
+}
+
+nav li {
+  text-align: center;
+  text-transform: capitalize;
+  // font-weight: 600;
+  transition: 0.2s;
+}
+
+nav li:hover {
+  background-color: $primary-color;
+  color: $light-gray;
+}
+
+nav a {
+  display: block;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: $dark-gray;
+}
+
+.nav-arrow {
+  background-color: $white;
+  padding-bottom: 3rem;
+  margin-bottom: 0rem;
+  padding-left: 1rem;
+  svg {
+    width: 2rem;
+    margin-bottom: 0rem;
+    fill: $dark-gray;
+  }
+}
+
+/*------------------------------------*\
+  #Utility classes
+\*------------------------------------*/
+
+.nav-show {
+  top: 0rem;
+  left: 0rem;
+  transition: 0.5s;
+}
+
+/*------------------------------------*\
+  # Desktop Link menu
+\*------------------------------------*/
+
+@media (min-width: 900px) {
+  .nav-menu {
+    left: 0rem;
+    right: auto;
+  }
+
+  .nav-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .nav-arrow {
+    position: absolute;
+    left: -15rem;
+  }
+}

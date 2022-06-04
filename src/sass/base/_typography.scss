@@ -78,7 +78,7 @@
 }
 
 /*------------------------------------*\
-  #Verical Rythem Grid
+  #Vertical Rhythm Grid
 \*------------------------------------*/
 
 html {
@@ -116,7 +116,8 @@ h2 {
 
 h3,
 h4,
-.skill-card {
+.skill-card,
+.nav-list {
   font-family: "neristhin";
   font-weight: normal;
   font-style: normal;
@@ -168,5 +169,7 @@ h2,
 .nav-list{
   font-size: $txt-md;
   line-height: 2;
+  // letter-spacing: 2;
+
 
 }
