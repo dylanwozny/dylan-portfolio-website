@@ -8,6 +8,8 @@ Using cmd line for sass compiling. No extension.
 
 compile command: 'npm start'
 
+PUBLIC FOLDER NOTE: folders like Js, fonts etc. may need to be manually copied over.
+
 Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
 
 STYLE GUIDE USED: https://google.github.io/styleguide/htmlcssguide.html

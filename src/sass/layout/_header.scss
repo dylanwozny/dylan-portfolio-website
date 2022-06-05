@@ -1,0 +1,5 @@
+@use "../utilities/" as *;
+
+.bckimg-container {
+  @include backgroundImg(-1, 12rem, 3rem);
+}

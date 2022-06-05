@@ -31,8 +31,6 @@ $txt-sml: 1rem;
 $txt-xs: 0.667rem;
 
 // --------spacing vars--------
-//
-
 $font-baseline: 100%;
 $baseline-1: 1.5rem;
 $baseline-2: 3rem;
@@ -41,3 +39,15 @@ $baseline-4: 6rem;
 
 $false: false;
 $true: true;
+
+/*------------------------------------*\
+  #Background image using img element
+\*------------------------------------*/
+$bckimg-z2: -2;
+$bckimg-parentPos: relative;
+$bckimg-childPos: absolute;
+$bckimg-imgFit: cover;
+$bckimg-h: 100%;
+$bckimg-w: 100%;
+$bckimg-top: 0;
+$bckimg-left: 0;

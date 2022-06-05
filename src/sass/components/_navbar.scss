@@ -9,6 +9,7 @@
   position: fixed;
   border-radius: 2px;
   background-color: $white;
+
   svg {
     fill: $primary-color;
     width: 2.5rem;
@@ -20,6 +21,7 @@
 \*------------------------------------*/
 
 .nav-menu {
+
   position: fixed;
   top: 0rem;
   left: -15rem;
@@ -71,9 +73,12 @@ nav a {
 
 .nav-arrow {
   background-color: $white;
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
   margin-bottom: 0rem;
   padding-left: 1rem;
+  padding-top: 1.5rem;
+  width: 100%;
+  text-align: left;
   svg {
     width: 2rem;
     margin-bottom: 0rem;

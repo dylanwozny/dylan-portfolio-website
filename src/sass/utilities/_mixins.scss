@@ -1,4 +1,7 @@
-// button mixin
+@use "../utilities/vars" as *;
+/*------------------------------------*\
+  #Button Colors
+\*------------------------------------*/
 // logic determines if border is shown when the hover fills in the background white
 @mixin buttonBg($bg, $border, $txt, $fill-border: false) {
   background-color: $bg;
@@ -25,6 +28,25 @@
     background: lighten($bg, 25%);
   }
 }
+
+/*------------------------------------*\
+  #Background image using img element
+\*------------------------------------*/
+@mixin backgroundImg($zindex: 0, $pt: 5rem, $pb: 5rem) {
+  z-index: $zindex;
+  position: $bckimg-parentPos;
+  padding: $pt 0rem $pb 0rem;
+  img {
+    z-index: $bckimg-z2;
+    position: $bckimg-childPos;
+    object-fit: $bckimg-imgFit;
+    height: $bckimg-h;
+    width: $bckimg-w;
+    top: $bckimg-top;
+    left: $bckimg-left;
+  }
+}
+
 
 // skill card
 
