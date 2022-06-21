@@ -1,0 +1,43 @@
+@use "../utilities/" as *;
+
+/* -----------------------GRID-------------------------- */
+
+/* .ListingCard is the “block” and represents the higher-level component
+.ListingCard__title is an “element” and represents a descendant of .ListingCard that helps compose the block as a whole.
+.ListingCard--featured is a “modifier” and represents a different state or variation on the .ListingCard block. */
+
+/* margin area for grid */
+.page-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(min-content, $grid-mid-width) 1fr;
+  // for navabr when in large screen view
+  padding-left: 0rem;
+
+  /* regular section with margin */
+  &__wrapper {
+    grid-column: 2 / span 1;
+    margin-bottom: 6rem;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    /* full span section no margin */
+    &--fullspan {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+// space for left navbar
+@media (min-width: 900px) {
+  .page-grid {
+    padding-left: 120px;
+  }
+}
+
+//Remove padding for large screen view. This makes it fit the grid column.
+@media (min-width: 1700px) {
+  .page-grid__wrapper {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}

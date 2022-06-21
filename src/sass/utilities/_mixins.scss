@@ -32,10 +32,11 @@
 /*------------------------------------*\
   #Background image using img element
 \*------------------------------------*/
-@mixin backgroundImg($zindex: 0, $pt: 5rem, $pb: 5rem) {
+// OLD, can still use but better to use .sr-only and image-set()
+@mixin backgroundImg($zindex: 0, $pt: 5rem, $pb: 5rem, $pl: 0, $pr: 0) {
   z-index: $zindex;
   position: $bckimg-parentPos;
-  padding: $pt 0rem $pb 0rem;
+  padding: $pt $pr $pb $pl;
   img {
     z-index: $bckimg-z2;
     position: $bckimg-childPos;
@@ -47,7 +48,27 @@
   }
 }
 
+/*------------------------------------*\
+  #Background image Accessability for screen readers
+\*------------------------------------*/
 
 // skill card
 
 // flex
+
+/*------------------------------------*\
+  #Fluid Grid for sections
+\*------------------------------------*/
+/* fluid grid with break points. This gird has wrapping and the children snap to column width,... */
+
+@mixin sectionGrid($gap, $minwidth, $colwidth1, $colwidth2) {
+  display: grid;
+  grid-gap: 1.5rem $gap;
+  grid-template-columns: repeat(auto-fit, minmax(min($minwidth, 100%), 1fr));
+  .grid-item1 {
+    grid-column: span $colwidth1;
+  }
+  .grid-item2 {
+    grid-column: span $colwidth2;
+  }
+}

@@ -13,5 +13,8 @@
       "path": "I:\\OneDrive\\NAIT\\semester-6\\dmit2033-webdesign2\\slide-off-canvas"
     }
   ],
-  "settings": {}
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "dylan_portfolio_website",
+    "liveServer.settings.port": 5501
+  }
 }

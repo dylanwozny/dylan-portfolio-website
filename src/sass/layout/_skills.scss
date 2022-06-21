@@ -1,0 +1,173 @@
+@use "../utilities/vars" as *;
+
+.skills {
+  h2,
+  .skills-card-container {
+    width: 100%;
+    max-width: $grid-mid-width;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  aside {
+    display: flex;
+    gap: 3rem;
+    row-gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    color: $secondary-color;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+
+    background-color: $primary-color;
+    svg {
+      fill: $secondary-color;
+      width: 3rem;
+    }
+
+    p {
+      font-size: $txt-lg;
+      line-height: 1;
+    }
+
+    form {
+      display: block;
+    }
+  }
+
+  input {
+    background-color: $primary-color;
+    // outline: 0px;
+    border: 0px;
+    border-bottom: solid 2px $secondary-color;
+    color: $secondary-color;
+    font-size: $txt-md;
+    // color: $light-gray;
+    // height: 3rem;
+    // width: 75%;
+    width: 10rem;
+  }
+
+  input:focus {
+    background-color: $primary-color;
+    outline: none;
+  }
+
+  //   manual margins to fit with wrapper.
+}
+
+.skills-search__input {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+// .skills-search {
+//   width: 100%;
+//   position: relative;
+
+//   > div {
+//     position: absolute;
+//     width: 100%;
+//   }
+// }
+
+/* .ListingCard is the “block” and represents the higher-level component
+.ListingCard__title is an “element” and represents a descendant of .ListingCard that helps compose the block as a whole.
+.ListingCard--featured is a “modifier” and represents a different state or variation on the .ListingCard block. */
+
+/*------------------------------------*\
+  #Skill cards
+\*------------------------------------*/
+
+.skillCards {
+  display: flex;
+  transition: display 1s;
+  -webkit-transition: display 1s;
+  min-height: 50vh;
+
+  gap: 1rem;
+  row-gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  justify-content: center;
+
+  &__card {
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 178px;
+    width: 25%;
+    min-width: 7.5rem;
+    text-align: center;
+    background-color: $white;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    height: 15rem;
+    box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
+      0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    svg {
+      width: 75%;
+      max-width: 7.5rem;
+      min-width: 1rem;
+      max-height: 6rem;
+      height: 6.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    figcaption {
+      // color: red;
+      // background-color: $primary-color;
+      // color: $light-gray;
+    }
+  }
+}
+
+.underline-gold {
+  border-bottom: solid 2px $secondary-color;
+  width: 15rem;
+}
+
+//   manual margins to fit with wrapper.
+@media (min-width: 1700px) {
+  .skills {
+    h2,
+    .skills-card-container {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
+
+// another option is to make an animation....
+.hidden {
+  order: 99;
+  width: 0rem;
+  height: 0rem;
+  padding: 0;
+  margin: 0;
+
+  * {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  svg {
+    width: 0;
+    height: 0;
+  }
+}

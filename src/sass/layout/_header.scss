@@ -1,5 +1,68 @@
 @use "../utilities/" as *;
 
-.bckimg-container {
-  @include backgroundImg(-1, 12rem, 3rem);
+// use sr-only to hide background image element
+
+.banner {
+  // display: flex;
+  // justify-content: start;
+  // flex-wrap: wrap;
+  // gap: 1rem;
+  padding-top: 19.5rem;
+  padding-bottom: 3rem;
+  background: $primary-color;
+  // background-image: url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg");
+  // background-image: -webkit-image-set(
+  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 1x,
+  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 1.5x);
+  // background-image: image-set(
+  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 1x,
+  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 2x);
+  // background-image: image-set(
+  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 750w,
+  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 20480w);
+  background-image: url("../../assets/img/banner-lg.jpg");
+  background-image: image-set(
+    url("../../assets/img/banner-lg.jpg") 1x,
+    url("../../assets/img/banner-sml.jpg") 2x
+  );
+  background-size: cover;
+
+  .banner__txt {
+    // width: 100%;
+    max-width: 1165px;
+    // padding-left: 1rem;
+    flex-grow: 3;
+    min-width: 880px;
+
+    flex-shrink: 4;
+  }
+
+  .banner__btns {
+    // width: 100%;
+    // max-width: 398px;
+
+    flex-grow: 1;
+    min-width: 207px;
+    flex-shrink: 1;
+  }
+}
+
+.flex-container {
+  width: 100%;
+  max-width: $grid-mid-width;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+/* fluid grid with break points. This gird has wrapping and the children snap to column width,... */
+
+.banner-grid-fluid {
+  @include sectionGrid(1rem, 26px, 8, 4);
+}
+
+.the_wrap {
+  max-width: 1540px;
+  margin: 0 auto;
 }
