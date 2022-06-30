@@ -1,0 +1,23 @@
+/*------------------------------------*\
+  #Dynamic breakpoint flex
+\*------------------------------------*/
+
+.grid-flex-test {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  // FLEX BASIS IS MIN WIDTH, DETERMINE BREAK POINT WITH THIS
+  // FLEX GROW is the size you want it to be
+  // MAX-width so its doesn't stretch to much
+
+  .item1 {
+    background-color: red;
+    flex: 4 1 383px;
+    max-width: 503px;
+  }
+  .item2 {
+    background-color: blue;
+    flex: 8 1 783px;
+  }
+}

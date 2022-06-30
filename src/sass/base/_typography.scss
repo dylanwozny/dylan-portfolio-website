@@ -45,21 +45,21 @@
   font-style: normal;
 }
 
-// @font-face {
-//   font-family: "nerislight_italic";
-//   src: url("#{$font-url}neris-lightitalic-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-lightitalic-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "nerislight_italic";
+  src: url("#{$font-url}neris-lightitalic-webfont.woff2") format("woff2"),
+    url("#{$font-url}neris-lightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-// @font-face {
-//   font-family: "nerissemibold";
-//   src: url("#{$font-url}neris-semibold-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-semibold-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
+@font-face {
+  font-family: "nerissemibold";
+  src: url("#{$font-url}neris-semibold-webfont.woff2") format("woff2"),
+    url("#{$font-url}neris-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 // @font-face {
 //   font-family: "nerissemibold_italic";
@@ -109,7 +109,8 @@ body {
   #FONT STYLES
 \*------------------------------------*/
 h1,
-h2 {
+h2,
+label {
   font-family: "league_spartanbold";
   font-weight: normal;
   font-style: normal;
@@ -125,8 +126,9 @@ h4,
 }
 
 p,
-figcaption {
-  font-family: "nerislight";
+figcaption,
+span {
+  font-family: "neris";
   font-weight: normal;
   font-style: normal;
 }
@@ -141,6 +143,12 @@ h3,
   font-size: clamp($txt-md, 5vw, $txt-lg);
 }
 
+h4 {
+  font-family: "nerislight_italic";
+  font-style: italic;
+  font-size: $txt-md;
+}
+
 h3,
 .skill-search-txt,
 .banner-caption-txt {
@@ -149,9 +157,10 @@ h3,
 }
 
 h1 {
-  font-size: clamp($txt-xl, 12vw, $txt-xxxl);
-  line-height: 1.4;
+  font-size: clamp($txt-lg, 12vw, $txt-xxl);
+  line-height: 1.48;
   margin: 0rem;
+  margin-top: 6rem;
   color: $light-gray;
 }
 
@@ -176,10 +185,37 @@ h2,
 
 p {
   font-size: 1rem;
+  max-width: 40rem;
 }
 
-figcaption
-{
+figcaption {
   font-size: $txt-md;
   font-size: clamp($txt-sml, 3.5vw, $txt-md);
+}
+
+.contact {
+  span {
+    font-size: clamp($txt-md, 5vw, $txt-lg);
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  label {
+    font-family: "nerissemibold";
+    font-size: clamp($txt-sml, 3.5vw, $txt-md);
+  }
+
+  input {
+    border: solid 1px gray;
+    border-radius: 3px;
+    height: 2rem;
+  }
+
+  .btn {
+    margin-top: 4.5rem;
+  }
+}
+
+span {
+  line-height: 1.3333;
 }

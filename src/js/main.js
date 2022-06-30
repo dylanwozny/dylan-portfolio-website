@@ -1,4 +1,7 @@
+// REDO THIS AS GOOD JQUERY
+
 // nav bar logic
+
 var button = document.querySelector(".nav-btn");
 console.log(button);
 

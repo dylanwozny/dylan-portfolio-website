@@ -1,6 +1,8 @@
 @use "../utilities/vars" as *;
 
 .skills {
+  margin-bottom: 6rem;
+
   h2,
   .skills-card-container {
     width: 100%;
@@ -106,6 +108,7 @@
     max-width: 178px;
     width: 25%;
     min-width: 7.5rem;
+    opacity: 1;
     text-align: center;
     background-color: $white;
     padding: 1.5rem 1rem 1.5rem 1rem;
@@ -113,6 +116,8 @@
     box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
       0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    // transition: width 1s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 
     svg {
       width: 75%;
@@ -150,24 +155,25 @@
 // another option is to make an animation....
 .hidden {
   order: 99;
-  width: 0rem;
-  height: 0rem;
-  padding: 0;
-  margin: 0;
+  opacity: 0;
 
   * {
-    width: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
+    // width: 0;
+    // height: 0;
+    // padding: 0;
+    // margin: 0;
+    // max-width: 0;
+    // min-width: 0;
   }
 
-  figcaption {
-    display: none;
-  }
+  // figcaption {
+  //   opacity: 0;
+  // }
 
-  svg {
-    width: 0;
-    height: 0;
-  }
+  // svg {
+  //   width: 0;
+  //   height: 0;
+  //   max-width: 0;
+  //   min-width: 0;
+  // }
 }

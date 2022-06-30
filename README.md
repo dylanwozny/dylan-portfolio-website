@@ -33,3 +33,11 @@ SVGO - cleaning up inline svg code. Like removing xmlns
 https://github.com/svg/svgo
 
 svgo -f ./src/assets/svgs -o ./src/assets/img
+
+## Squoosh CLI
+
+command
+
+// compress all images in the directory
+
+squoosh-cli --mozjpeg '{quality:50}' -d out ./
