@@ -59,6 +59,16 @@
   }
 }
 
+.btn-action__hover {
+  @include buttonBg($primary-color, $primary-color, $light-gray);
+}
+
+.btn-action__hover:hover {
+  background-color: $light-gray;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+}
+
 .btn-highlight {
   @include buttonBg($dark-accent, $dark-accent, $light-gray, $true);
 }

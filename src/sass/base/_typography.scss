@@ -86,11 +86,11 @@ html {
 }
 
 body {
-  background-color: $light-gray;
-  /** light vertical lines, transparent background **/
-  background-image: linear-gradient(#0ff 1px, transparent 1px);
-  /** auto (horizontal), 1.5rem - creates the vertical grid space **/
-  background-size: auto 1.5rem;
+  // background-color: $light-gray;
+  // /** light vertical lines, transparent background **/
+  // background-image: linear-gradient(#0ff 1px, transparent 1px);
+  // /** auto (horizontal), 1.5rem - creates the vertical grid space **/
+  // background-size: auto 1.5rem;
 }
 
 /* ListingCard.css */
@@ -144,8 +144,8 @@ h3,
 }
 
 h4 {
-  font-family: "nerislight_italic";
-  font-style: italic;
+  font-family: "neris";
+  font-weight: bold;
   font-size: $txt-md;
 }
 

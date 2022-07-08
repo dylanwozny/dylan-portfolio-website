@@ -9,6 +9,10 @@
   position: fixed;
   border-radius: 2px;
   background-color: $white;
+  z-index: 1;
+  box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 
   svg {
     fill: $primary-color;
@@ -21,7 +25,6 @@
 \*------------------------------------*/
 
 .nav-menu {
-
   position: fixed;
   top: 0rem;
   left: -15rem;
@@ -32,6 +35,7 @@
   padding: 1.5rem 0rem;
   height: 100vh;
   box-shadow: 1px 1px 15px $dark-gray;
+  z-index: 1;
 
   svg {
     width: 6rem;
@@ -50,6 +54,12 @@
   .nav-logo:hover {
     background-color: $white;
   }
+
+  .nav-logo {
+    a {
+      padding: 0rem;
+    }
+  }
 }
 
 nav li {
@@ -61,7 +71,9 @@ nav li {
 
 nav li:hover {
   background-color: $primary-color;
-  color: $light-gray;
+  a {
+    color: $light-gray;
+  }
 }
 
 nav a {

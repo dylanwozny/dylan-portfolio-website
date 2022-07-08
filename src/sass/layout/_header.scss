@@ -3,14 +3,25 @@
 // use sr-only to hide background image element
 
 .banner {
+  position: relative;
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
   // display: flex;
   // justify-content: start;
   // flex-wrap: wrap;
   // gap: 1rem;
-  padding-top: 19.5rem;
-  padding-bottom: 3rem;
-  background: $primary-color;
-  // background-image: url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg");
+  padding-top: 13.5rem;
+  padding-bottom: 7.5rem;
+  // background: $primary-color;
+  // background-image: url("../../assets/img/banner-lg-flipped.jpg");
+  // background-size: cover;
   // background-image: -webkit-image-set(
   //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 1x,
   //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 1.5x);
@@ -20,12 +31,10 @@
   // background-image: image-set(
   //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 750w,
   //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 20480w);
-  background-image: url("../../assets/img/banner-lg.jpg");
-  background-image: image-set(
-    url("../../assets/img/banner-lg.jpg") 1x,
-    url("../../assets/img/banner-sml.jpg") 2x
-  );
-  background-size: cover;
+  // background-image: image-set(
+  //   "../../assets/img/sass-editor.jpg" 1x,
+  //   "../../assets/img/ass-editor-2x.jpg" 2x
+  // );
 
   .banner__txt {
     // width: 100%;

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Website</title>
+    <link rel="icon" type="image/x-icon" href="./assets/svgs/dw-logo.svg">
     <link rel="stylesheet" href="css/styles.css" />
 
     <link
@@ -123,35 +124,34 @@
             />
           </svg>
         </li>
-        <a href="#">
-          <li>projects</li>
-        </a>
-        <a href="#"><li>About</li></a>
-        <a href="#"><li>Contact</li></a>
-        <a href="#"><li>Resume</li></a>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#section-project"> Projects </a></li>
+        <li><a href="./index.html#section-about">About</a></li>
+        <li><a href="./index.html#section-contact">Contact</a></li>
       </ul>
     </nav>
     <div class="page-grid">
       <header class="banner page-grid__wrapper page-grid__wrapper--fullspan">
         <img
-          class="sr-only"
-          alt=" POV looking up at Angular staircases criss crossing"
-          src=""
-        />
+        class="img-test"
+        alt="web app sign in page"
+        srcset="
+        ./assets/img/home/banner-sml.jpg 1000w,
+          ./assets/img/home/banner-md.jpg 1400w,
+          ./assets/img/home/banner-lg-flipped.jpg 2200w,
+          ./assets/img/home/banner-xl.jpg 2500w"
+      />
         <div class="the_wrap">
           <div class="banner-grid-fluid">
             <div class="grid-item1">
+
               <h1>Dylan Wozny</h1>
               <p class="banner-caption-txt">Front End Developer</p>
-            </div>
-            <div class="grid-item2">
-              <a href="#" class="btn btn-primary">Click me</a>
-              <a href="#" class="btn btn-secondary">Click me</a>
             </div>
           </div>
         </div>
       </header>
-      <section class="bio page-grid__wrapper">
+      <section  id="section-about" class="bio page-grid__wrapper">
         <div class="bio-grid-fluid">
           <div class="grid-item1">
             <h2>Who am I ?</h2>
@@ -179,7 +179,7 @@
             <div class="item2">
               <img  class="grid-item2__img" src="assets/img/profile-pic.jpg" alt="" />
               <div class="grid-item2__links">
-              <a href="" class="btn long-btn">
+              <a href="https://github.com/dylanwozny" class="btn long-btn">
                 <svg
                   viewBox="0 0 32 32"
                   xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +193,7 @@
                   <svg viewBox="0 0 12 11"><path d="M7.2.6l-.7.7 3.2 3.2H.3v1h9.4L6.5 8.7l.7.7L11.6 5z"/></svg>
                 </div>
               </a>
-              <a href="" class=" btn">
+              <a href="https://ca.linkedin.com/in/dylan-wozny-415b79224?trk=public_profile_samename-profile" class=" btn">
                 <svg x="0px" y="0px"
                 viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" >
                          <g>
@@ -214,7 +214,7 @@
             </div>
         </div>
       </section>
-      <section class="page-grid__wrapper projects">
+      <section id="section-project" class="page-grid__wrapper projects">
         <h2>Project Portfolio</h2>
         <div class="project-grid-fluid">
           <a href="./developer-projects.html" class="grid-item1">
@@ -671,7 +671,7 @@
           </ul>
         </div>
       </section>
-      <section class="contact page-grid__wrapper">
+      <section id="section-contact" class="contact page-grid__wrapper">
         <h2>Contact me</h2>
         <span>Leave me a message below !</span>
         <!-- add in a form here -->
@@ -707,7 +707,7 @@
             required
             placeholder="message"
           />
-          <button class="btn btn-action" type="submit">Send</button>
+          <button class="btn btn-action__hover" type="submit">Send</button>
         </form>
       </section>
     </div>
