@@ -29,17 +29,15 @@
   top: 0rem;
   left: -15rem;
   width: 7.5rem;
-  /* height: 30rem; */
   background-color: $white;
   transition: 0.5s;
-  padding: 1.5rem 0rem;
   height: 100vh;
   box-shadow: 1px 1px 15px $dark-gray;
   z-index: 1;
 
   svg {
     width: 6rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 3rem;
     padding: 0rem;
   }
 
@@ -116,6 +114,7 @@ nav a {
   .nav-menu {
     left: 0rem;
     right: auto;
+    padding: 1.5rem 0rem 0rem 0rem;
   }
 
   .nav-list {

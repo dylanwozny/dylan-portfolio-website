@@ -164,6 +164,12 @@ h1 {
   color: $light-gray;
 }
 
+.projects-page {
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+}
+
 h2,
 .banner-caption-txt {
   font-size: clamp($txt-lg, 7vw, $txt-xl);

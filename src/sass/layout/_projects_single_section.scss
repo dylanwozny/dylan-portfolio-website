@@ -28,14 +28,17 @@ p {
   .project-desc__content {
     display: flex;
     flex-wrap: wrap;
-
     svg {
       width: 3rem;
     }
 
     p {
-      padding: 1.5rem;
+      // padding: 1.5rem;
       max-width: 575px;
+    }
+
+    div:first-child {
+      padding: 1.5rem;
     }
 
     > div {

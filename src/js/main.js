@@ -22,10 +22,15 @@ $(document).ready(function () {
   // ------------------ Skil Search Logic -------------------//
   //------------------------------------------------------//
 
+  // ----- prevent enter from refreshing page when on textbox----//
+  $("#filter").on("keydown", function (e) {
+    if (e.which === 13) {
+      e.preventDefault();
+    }
+  });
+
   const tagSearch = $(".frm-control");
   // const searchReset = $(".frm-group > a");
-
-  let boolResult = 1;
 
   // ----------grab the image div and convert to array-------------//
   const imageContainer = $(".skillCards__card--display");
@@ -33,10 +38,6 @@ $(document).ready(function () {
 
   // -------event on search input--------//
   tagSearch.on("input", (e) => {
-    // set bool result to hide reset button
-    boolResult = 0;
-    e.preventDefault();
-
     // return search value, remove whitespaces
     let searchValue = (tagSearch.textContent = e.target.value).replace(
       / /g,
@@ -80,7 +81,7 @@ $(document).ready(function () {
         $(this).click(function () {
           $([document.documentElement, document.body]).animate(
             {
-              scrollTop: $("#section-" + $(this).attr("id")),
+              scrollTo: $("#section-" + $(this).attr("id")),
             },
             500
           );
@@ -88,9 +89,33 @@ $(document).ready(function () {
       });
   }
 
+  //---------------------------------------------------//
   //------- inject flav icon on page----///
+  //---------------------------------------------------//
 
   $("head").append(
     "<link rel='icon' type='image/x-icon' href='./assets/svgs/dw-logo.svg'></link>"
   );
+
+  //---------------------------------------------------//
+  // ------------------ jump to top of page arrow -------------------//
+  //---------------------------------------------------//
+
+  //------------append html fragment with jquery---------------
+  // scrollSection = $("<section></section>", { class: "page-grid__wrapper" });
+  // $(".page-grid").append(scrollSection);
+  //---------------------------------------
+
+  //if page is scrolled to bottom, inject the scroll up button as html
+
+  var goToTop = $(".btn-scroll");
+
+  goToTop.click(() => {
+    $([document.documentElement, document.body]).animate(
+      {
+        scrollTop: 0,
+      },
+      300
+    );
+  });
 });
