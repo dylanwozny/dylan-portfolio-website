@@ -1,7 +1,8 @@
 0. finish text/content on site
-1. add sub menu for projects
+
 2. check if font works on all browsers
 3. fix button postion on projects in mobile view
 4. host projects on website and get them working
+4. SEO html, alt tags for images....
 5. clean up code
 6. remove unused github stuff

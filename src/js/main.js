@@ -6,6 +6,13 @@ $(document).ready(function () {
   var button = $(".nav-btn");
   var arrowButton = $(".nav-arrow");
   var navBar = $("nav");
+  var projectToggle = $("#navProjects a");
+  var projectMenu = $(".nav-list__projects");
+
+  projectToggle.click((e) => {
+    e.preventDefault();
+    projectMenu.toggleClass("nav-list__projects--hide");
+  });
 
   arrowButton.click((e) => {
     navBar.toggleClass("nav-show");
