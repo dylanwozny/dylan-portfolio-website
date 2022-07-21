@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Projects</title>
+    <meta
+      name="description"
+      content="Picture Gallery of chef site recipe submission wireframe design"
+    />
+    <title>Chef Submission</title>
     <link rel="stylesheet" href="css/styles.css" />
 
     <link
@@ -40,7 +44,7 @@
   </head>
   <body class="projects-page">
     <header>
-      <button class="nav-btn">
+      <button class="nav-btn" aria-label="navbar menu">
         <svg x="0px" y="0px" viewBox="0 0 384.97 384.97">
           <g id="Menu">
             <path
@@ -62,7 +66,7 @@
     <nav class="nav-menu">
       <ul class="nav-list">
         <li class="list-nav-arrow">
-          <button class="nav-arrow">
+          <button class="nav-arrow" aria-label="navbar menu open or close">
             <svg
               version="1.1"
               x="0px"
@@ -126,7 +130,7 @@
           </a>
         </li>
         <li><a href="./index.html">Home</a></li>
-        <li id="navProjects"><a href=""> Projects </a></li>
+        <li id="navProjects" class="nav-projects">Projects</li>
         <li class="nav-list__projects">
           <ul>
             <li><a href="./design-projects.html">Design Projects</a></li>
@@ -141,26 +145,47 @@
       <header class="page-grid__wrapper">
         <h1>Chef Recipe Submission</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat
-          officia magni, assumenda commodi blanditiis rerum voluptatem eaque
-          laborum incidunt id, ipsum maxime neque in dicta, ut deserunt earum
-          velit.
+          This wireframe details the step by step screens a user will see when
+          submitting their own recipe. The the screens are in the order the user
+          would see.
         </p>
       </header>
       <main class="page-grid__wrapper">
         <section class="chef-dash__imgs">
           <img
+            src="./assets/img/chef-submit/home.jpg"
+            alt="Anthony's recipes home page design. A WireFrame with no colors besides white and gray. "
+          />
+          <img
+            src="./assets/img/chef-submit/title-form.jpg"
+            alt="Submit recipe page, step one,a WireFrame with no colors besides white and gray. A Web form that asks for a title."
+          />
+          <img
             id="scrollToo"
             src="./assets/img/chef-submit/description-form.jpg"
-            alt=""
+            alt="Submit step 2, a WireFrame with no colors besides white and gray. A Web form that asks for a recipe description."
           />
-          <img src="./assets/img/chef-submit/final-form.jpg" alt="" />
-          <img src="./assets/img/chef-submit/Home.jpg" alt="" />
-          <img src="./assets/img/chef-submit/ingredients-form.jpg" alt="" />
-          <img src="./assets/img/chef-submit/instructions-form.jpg" alt="" />
-          <img src="./assets/img/chef-submit/review.jpg alt=" />
-          <img src="./assets/img/chef-submit/success.jpg" alt="" />
-          <img src="./assets/img/chef-submit/title-form.jpg" alt="" />
+          <img
+            src="./assets/img/chef-submit/ingredients-form.jpg"
+            alt="Submit step 3, a WireFrame with no colors besides white and gray. A Web form that asks for recipe ingredients."
+          />
+          <img
+            src="./assets/img/chef-submit/instructions-form.jpg"
+            alt="Submit step 4, a WireFrame with no colors besides white and gray. A Web form that asks for a recipe instructions."
+          />
+          <img
+            src="./assets/img/chef-submit/final-form.jpg"
+            alt="Submit step 5, a WireFrame with no colors besides white and gray. A Web form that asks for recipe cook and prep time."
+          />
+
+          <img
+            src="./assets/img/chef-submit/review.jpg"
+            alt="Submit recipe final review, a WireFrame with no colors besides white and gray. A Web form that asks for a to review previous information given."
+          />
+          <img
+            src="./assets/img/chef-submit/success.jpg"
+            alt="Submission successful message, a WireFrame with no colors besides white and gray."
+          />
         </section>
       </main>
       <section class="page-grid__wrapper">
@@ -175,7 +200,6 @@
         </div>
       </section>
     </div>
-    <button id="button" class="btn">scroll</button>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"

@@ -6,7 +6,7 @@ $(document).ready(function () {
   var button = $(".nav-btn");
   var arrowButton = $(".nav-arrow");
   var navBar = $("nav");
-  var projectToggle = $("#navProjects a");
+  var projectToggle = $("#navProjects");
   var projectMenu = $(".nav-list__projects");
 
   projectToggle.click((e) => {

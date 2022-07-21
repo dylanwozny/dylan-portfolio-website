@@ -32,7 +32,7 @@
   background-color: $white;
   transition: 0.5s;
   height: 100vh;
-  box-shadow: 1px 1px 15px $dark-gray;
+  box-shadow: 0px 0px 5px $dark-gray;
   z-index: 1;
 
   svg {
@@ -74,7 +74,8 @@ nav li:hover {
   }
 }
 
-nav a {
+nav a,
+.nav-projects {
   display: block;
   text-align: center;
   padding: 1rem 0rem;
@@ -143,6 +144,12 @@ nav a {
   a {
     display: block;
   }
+}
+
+.nav-projects:hover{
+  cursor: pointer;
+  color: $light-gray;
+
 }
 
 .nav-list__projects:hover {

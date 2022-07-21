@@ -1,0 +1,15 @@
+@use "../utilities" as *;
+
+.chef-dash__imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+
+  img {
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    box-shadow: 5px 4px 10px 0px hsl(228deg, 5%, 19%);
+  }
+}

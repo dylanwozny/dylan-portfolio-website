@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Projects</title>
+    <meta
+      name="description"
+      content="Image Gallery of wireframe design of a chef website dashboard. with options to view, edit and delete recipes submitted on the chef's website."
+    />
+    <title>Chef Dashboard</title>
     <link rel="stylesheet" href="css/styles.css" />
 
     <link
@@ -40,7 +44,7 @@
   </head>
   <body class="projects-page">
     <header>
-      <button class="nav-btn">
+      <button class="nav-btn" aria-label="navbar menu">
         <svg x="0px" y="0px" viewBox="0 0 384.97 384.97">
           <g id="Menu">
             <path
@@ -62,7 +66,7 @@
     <nav class="nav-menu">
       <ul class="nav-list">
         <li class="list-nav-arrow">
-          <button class="nav-arrow">
+          <button class="nav-arrow" aria-label="navbar menu open or close">
             <svg
               version="1.1"
               x="0px"
@@ -124,7 +128,7 @@
           </svg>
         </li>
         <li><a href="./index.html">Home</a></li>
-        <li id="navProjects"><a href=""> Projects </a></li>
+        <li id="navProjects" class="nav-projects">Projects</li>
         <li class="nav-list__projects">
           <ul>
             <li><a href="./design-projects.html">Design Projects</a></li>
@@ -139,26 +143,47 @@
       <header class="page-grid__wrapper">
         <h1>Chef Dashboard</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat
-          officia magni, assumenda commodi blanditiis rerum voluptatem eaque
-          laborum incidunt id, ipsum maxime neque in dicta, ut deserunt earum
-          velit.
+          This wire-frame is a Content Management System Dashboard the chef, who
+          is the owner of the site, logins into to view information about
+          recipes submitted to his website. The chef can edit, delete, view,
+          skip, save and publish recipes through the dashboard.
         </p>
       </header>
       <main class="page-grid__wrapper">
         <section class="chef-dash__imgs">
-          <img src="./assets/img/chef-dashboard/Dashboard.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/edit.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/nav menu.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/publish.jpg" alt="" />
           <img
-            src="./assets/img/chef-dashboard/saved for later – 1.jpg"
-            alt=""
+            src="./assets/img/chef-dashboard/Dashboard.jpg"
+            alt="A web page dashboard, a WireFrame with no colors besides white and gray. Sections of webpage include latest recipes, continue viewing,and all recipes."
           />
-          <img src="./assets/img/chef-dashboard/skipped – 1.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/skipped.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/success.jpg" alt="" />
-          <img src="./assets/img/chef-dashboard/view.jpg" alt="" />
+          <img
+            src="./assets/img/chef-dashboard/view.jpg"
+            alt="Recipe view, with the title clam soup, a WireFrame with no colors besides white and gray. With an edit button and the information of the recipe."
+          />
+          <img
+            src="./assets/img/chef-dashboard/edit.jpg"
+            alt="Recipe edit, a WireFrame with no colors besides white and gray. Details of clam soup are displayed here and are editable in a textbox."
+          />
+          <img
+            src="./assets/img/chef-dashboard/publish.jpg"
+            alt="Publish recipe page, a WireFrame with no colors besides white and gray. web page compares information of old and newly edited recipe. Options to publish are here."
+          />
+          <img
+            src="./assets/img/chef-dashboard/success.jpg"
+            alt="Publish succsessful message, a WireFrame with no colors besides white and gray."
+          />
+          <img
+            src="./assets/img/chef-dashboard/save-for-later.jpg"
+            alt="Recipe saved message, a WireFrame with no colors besides white and gray."
+          />
+          <img
+            src="./assets/img/chef-dashboard/skip.jpg"
+            alt="skip recipe notification, a WireFrame with no colors besides white and gray."
+          />
+
+          <img
+            src="./assets/img/chef-dashboard/skipped.jpg"
+            alt="skip recipe notification, a WireFrame with no colors besides white and gray."
+          />
         </section>
       </main>
       <section class="page-grid__wrapper">

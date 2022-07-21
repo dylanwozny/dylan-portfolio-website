@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Projects</title>
+    <meta
+      name="description"
+      content="Gallery of images of full colored designs of Chef website homepage."
+    />
+    <title>Chef Homepage</title>
     <link rel="stylesheet" href="css/styles.css" />
 
     <link
@@ -40,7 +44,7 @@
   </head>
   <body class="projects-page">
     <header>
-      <button class="nav-btn">
+      <button class="nav-btn" aria-label="navbar menu">
         <svg x="0px" y="0px" viewBox="0 0 384.97 384.97">
           <g id="Menu">
             <path
@@ -62,7 +66,7 @@
     <nav class="nav-menu">
       <ul class="nav-list">
         <li class="list-nav-arrow">
-          <button class="nav-arrow">
+          <button class="nav-arrow" aria-label="navbar menu open or close">
             <svg
               version="1.1"
               x="0px"
@@ -126,7 +130,7 @@
           </a>
         </li>
         <li><a href="./index.html">Home</a></li>
-        <li id="navProjects"><a href=""> Projects </a></li>
+        <li id="navProjects" class="nav-projects">Projects</li>
         <li class="nav-list__projects">
           <ul>
             <li><a href="./design-projects.html">Design Projects</a></li>
@@ -141,19 +145,35 @@
       <header class="page-grid__wrapper">
         <h1>Chef Recipe Submission</h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat
-          officia magni, assumenda commodi blanditiis rerum voluptatem eaque
-          laborum incidunt id, ipsum maxime neque in dicta, ut deserunt earum
-          velit.
+          This prototype is the homepage for the chef website. It is designed
+          responsively with desktop, tablet and mobile views. It also includes a
+          mood board that setup color, text and styling rules for the rest of
+          the site.
         </p>
       </header>
       <main class="page-grid__wrapper">
         <section class="chef-dash__imgs">
-          <img src="./assets/img/chef-design/Home Large View 1525.jpg" alt="" />
-          <img src="./assets/img/chef-design/Home Med View 875.jpg" alt="" />
-          <img src="./assets/img/chef-design/Home Small View 375.jpg" alt="" />
-          <img src="./assets/img/chef-design/mobile-slide-nav.jpg" alt="" />
-          <img src="./assets/img/chef-design/style-guide.jpg" alt="" />
+          <img
+            src="./assets/img/chef-design/Home Large View 1525.jpg"
+            alt="Homepage design of a chef website. Title says 'your recipes, his expertise'. Designs contains yellow, red, gray and white color. Text is included and styled. Images of a chef, pizza and food are included in designs "
+          />
+          <img
+            src="./assets/img/chef-design/Home Med View 875.jpg"
+            alt="tablet design of a chef website, less whitespace. Title says 'your recipes, his expertise'. Designs contains yellow, red, gray and white color. Text is included and styled. Images of a chef, pizza and food are included in designs"
+          />
+          <img
+            src="./assets/img/chef-design/Home Small View 375.jpg"
+            alt="Mobile homepage design of a chef website, most content sections are displayed vertically. Title says 'your recipes, his expertise'. Designs contains yellow, red, gray and white color. Text is included and styled. Images of a chef, pizza and food are included in designs"
+          />
+
+          <img
+            src="./assets/img/chef-design/style-guide.jpg"
+            alt="A mood board with styling rules of website. contains, yellow, red, gray and white. Fancy fonts for text. Font sized are detailed like h1 is 105px."
+          />
+          <img
+            src="./assets/img/chef-design/mobile-slide-nav.jpg"
+            alt="A mobile navbar with page navigation and a red button for submit a recipe"
+          />
         </section>
       </main>
       <section class="page-grid__wrapper">
@@ -168,7 +188,6 @@
         </div>
       </section>
     </div>
-    <button id="button" class="btn">scroll</button>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
