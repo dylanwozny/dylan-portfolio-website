@@ -19,4 +19,9 @@
 
 .btn-scroll:hover {
   border: solid 6px $primary-color;
+  background: $primary-color;
+
+  svg{
+    fill: $light-gray;
+  }
 }

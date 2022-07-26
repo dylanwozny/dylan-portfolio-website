@@ -1,7 +1,6 @@
 @use "../utilities/" as *;
 
-// use sr-only to hide background image element
-
+// positioned image as background
 .banner {
   position: relative;
   img {
@@ -9,67 +8,24 @@
     z-index: -1;
     width: 100%;
     height: 100%;
+    //object-fit resizes image
     object-fit: cover;
     top: 0;
     left: 0;
   }
-  // display: flex;
-  // justify-content: start;
-  // flex-wrap: wrap;
-  // gap: 1rem;
-  // height of full header 648px
-
-  // background: $primary-color;
-  // background-image: url("../../assets/img/banner-lg-flipped.jpg");
-  // background-size: cover;
-  // background-image: -webkit-image-set(
-  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 1x,
-  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 1.5x);
-  // background-image: image-set(
-  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 1x,
-  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 2x);
-  // background-image: image-set(
-  //   url("https://assets.codepen.io/2332100/small-landscape-750x536.jpg") 750w,
-  //   url("https://assets.codepen.io/2332100/large-landscape-2048x1536.jpg") 20480w);
-  // background-image: image-set(
-  //   "../../assets/img/sass-editor.jpg" 1x,
-  //   "../../assets/img/ass-editor-2x.jpg" 2x
-  // );
-
-  .banner__txt {
-    // width: 100%;
-    max-width: 1165px;
-    // padding-left: 1rem;
-    flex-grow: 3;
-    min-width: 880px;
-
-    flex-shrink: 4;
-  }
-
-  .banner__btns {
-    // width: 100%;
-    // max-width: 398px;
-
-    flex-grow: 1;
-    min-width: 207px;
-    flex-shrink: 1;
-  }
 }
 
-.flex-container {
-  width: 100%;
-  max-width: $grid-mid-width;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 auto;
-}
+// .flex-container {
+//   width: 100%;
+//   max-width: $grid-mid-width;
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 1rem;
+//   margin: 0 auto;
+// }
 
-/* fluid grid with break points. This gird has wrapping and the children snap to column width,... */
-
-.banner-grid-fluid {
-  @include sectionGrid(1rem, 26px, 8, 4);
-  //15.6
+// banner layout
+.banner-content {
   padding-top: clamp(6rem, 10vw, 13.5rem);
   padding-bottom: clamp(3rem, 10vw, 7.5rem);
   min-height: 25rem;
@@ -79,6 +35,7 @@
   }
 }
 
+// centering content without touching edges of browser
 .the_wrap {
   max-width: 1540px;
   margin: 0 auto;

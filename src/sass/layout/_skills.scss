@@ -4,7 +4,7 @@
   margin-bottom: 6rem;
 
   h2,
-  .skills-card-container {
+  .skills__card-container {
     width: 100%;
     max-width: $grid-mid-width;
     padding-left: 5%;
@@ -15,8 +15,10 @@
   h2 {
     margin-bottom: 1.5rem;
   }
-
-  aside {
+  //---------------------------------------------
+  //---------------- Skills Search----------------
+  //-------------------------------------------
+  .skills__search {
     display: flex;
     gap: 3rem;
     row-gap: 1.5rem;
@@ -45,14 +47,12 @@
 
   input {
     background-color: $primary-color;
-    // outline: 0px;
+
     border: 0px;
     border-bottom: solid 2px $secondary-color;
     color: $secondary-color;
     font-size: $txt-md;
-    // color: $light-gray;
-    // height: 3rem;
-    // width: 75%;
+
     width: 10rem;
   }
 
@@ -60,47 +60,30 @@
     background-color: $primary-color;
     outline: none;
   }
-
-  //   manual margins to fit with wrapper.
 }
 
-.skills-search__input {
+.skills__search-input {
   display: flex;
   align-items: flex-end;
-  gap: .5rem;
+  gap: 0.5rem;
 }
-
-// .skills-search {
-//   width: 100%;
-//   position: relative;
-
-//   > div {
-//     position: absolute;
-//     width: 100%;
-//   }
-// }
-
-/* .ListingCard is the “block” and represents the higher-level component
-.ListingCard__title is an “element” and represents a descendant of .ListingCard that helps compose the block as a whole.
-.ListingCard--featured is a “modifier” and represents a different state or variation on the .ListingCard block. */
 
 /*------------------------------------*\
   #Skill cards
 \*------------------------------------*/
 
-.skillCards {
+.skills__cards {
   display: flex;
   transition: display 1s;
   -webkit-transition: display 1s;
   min-height: 50vh;
-
   gap: 1rem;
   row-gap: 1.5rem;
   flex-wrap: wrap;
   margin-top: 1.5rem;
   justify-content: center;
 
-  &__card {
+  .skills__card {
     display: flex;
     order: 1;
     flex-direction: column;
@@ -116,7 +99,6 @@
     box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
       0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    // transition: width 1s ease-in-out;
     transition: opacity 0.5s ease-in-out;
 
     svg {
@@ -127,53 +109,21 @@
       height: 6.5rem;
       margin-bottom: 1.5rem;
     }
-
-    figcaption {
-      // color: red;
-      // background-color: $primary-color;
-      // color: $light-gray;
+// hide card when does not match search
+    &--hidden {
+      order: 99;
+      opacity: 0;
     }
   }
-}
-
-.underline-gold {
-  border-bottom: solid 2px $secondary-color;
-  width: 15rem;
 }
 
 //   manual margins to fit with wrapper.
 @media (min-width: 1700px) {
   .skills {
     h2,
-    .skills-card-container {
+    .skills__card-container {
       padding-left: 0rem;
       padding-right: 0rem;
     }
   }
-}
-
-// another option is to make an animation....
-.hidden {
-  order: 99;
-  opacity: 0;
-
-  * {
-    // width: 0;
-    // height: 0;
-    // padding: 0;
-    // margin: 0;
-    // max-width: 0;
-    // min-width: 0;
-  }
-
-  // figcaption {
-  //   opacity: 0;
-  // }
-
-  // svg {
-  //   width: 0;
-  //   height: 0;
-  //   max-width: 0;
-  //   min-width: 0;
-  // }
 }

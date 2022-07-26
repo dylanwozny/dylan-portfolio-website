@@ -41,3 +41,39 @@ command
 // compress all images in the directory
 
 squoosh-cli --mozjpeg '{quality:50}' -d out ./
+
+## BEM Main Rules
+
+### .ListingCard
+
+is the “block” and represents the higher-level component
+
+### .ListingCard\_\_title
+
+is an “element” and represents a descendant of .ListingCard that helps compose the block as a whole.
+
+### .ListingCard--featured
+
+is a “modifier” and represents a different state or variation on the .ListingCard block.
+
+### Js Hooks
+
+We recommend creating JavaScript-specific classes to bind to, prefixed with .js-:
+
+<button class="btn btn-primary js-request-to-book">Request to Book</button>
+
+### Border
+
+Use 0 instead of none to specify that a style has no border
+
+### Nested selectors
+
+Do not nest selectors more than three levels deep!
+
+### Variables
+
+Prefer dash-cased variable names (e.g. $my-variable)
+
+### Mixins
+
+Mixins should be used to DRY up your code, add clarity, or abstract complexity

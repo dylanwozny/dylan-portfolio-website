@@ -3,16 +3,26 @@
 /*------------------------------------*\
   #hamburger button
 \*------------------------------------*/
-
-.nav-btn {
-  padding: 0.5rem;
+.ham {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 5%;
   position: fixed;
-  border-radius: 2px;
-  background-color: $white;
+  top: 0;
+  left: 0;
   z-index: 1;
+  background-color: $white;
   box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
     0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+
+  svg {
+    width: 3rem;
+  }
+}
+.ham__btn {
+  background-color: $white;
+  padding: 0rem;
 
   svg {
     fill: $primary-color;
@@ -24,7 +34,7 @@
   #Link Menu Mobile
 \*------------------------------------*/
 
-.nav-menu {
+.nav {
   position: fixed;
   top: 0rem;
   left: -15rem;
@@ -41,48 +51,45 @@
     padding: 0rem;
   }
 
-  .list-nav-arrow:hover {
+  .nav__arrow:hover {
     background-color: $white;
   }
 
-  .list-nav-arrow {
+  .nav__arrow {
     text-align: left;
   }
 
-  .nav-logo:hover {
+  .nav__logo:hover {
     background-color: $white;
   }
 
-  .nav-logo {
+  .nav__logo {
+    display: none;
     a {
       padding: 0rem;
     }
   }
 }
 
-nav li {
-  text-align: center;
-  text-transform: capitalize;
-  // font-weight: 600;
-  transition: 0.2s;
-}
-
-nav li:hover {
-  background-color: $primary-color;
-  a {
-    color: $light-gray;
+nav {
+  li {
+    text-align: center;
+    text-transform: capitalize;
+    // font-weight: 600;
+    transition: 0.2s;
   }
 }
 
-nav a,
-.nav-projects {
-  display: block;
-  text-align: center;
-  padding: 1rem 0rem;
-  color: $dark-gray;
+nav {
+  li:hover {
+    background-color: $primary-color;
+    a {
+      color: $light-gray;
+    }
+  }
 }
 
-.nav-arrow {
+.nav__arrow {
   background-color: $white;
   padding-bottom: 1.5rem;
   margin-bottom: 0rem;
@@ -97,11 +104,19 @@ nav a,
   }
 }
 
+nav a,
+.nav__projects {
+  display: block;
+  text-align: center;
+  padding: 1rem 0rem;
+  color: $dark-gray;
+}
+
 /*------------------------------------*\
   #Utility classes
 \*------------------------------------*/
 
-.nav-show {
+.nav--show {
   top: 0rem;
   left: 0rem;
   transition: 0.5s;
@@ -112,30 +127,38 @@ nav a,
 \*------------------------------------*/
 
 @media (min-width: 900px) {
-  .nav-menu {
+  .nav {
     left: 0rem;
     right: auto;
     padding: 1.5rem 0rem 0rem 0rem;
+
+    .nav__logo {
+      display: block;
+    }
   }
 
-  .nav-list {
+  .nav__menu {
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
 
-  .nav-arrow {
+  .nav__arrow {
     position: absolute;
     left: -15rem;
+  }
+
+  .ham {
+    top: -25rem;
   }
 }
 
 /*------------------------------------*\
-  # projects
+  #Projects nested menu
 \*------------------------------------*/
 
-.nav-list__projects {
+.nav__projects-list {
   display: none;
   font-size: $txt-sml;
   background-color: $light-gray;
@@ -146,13 +169,12 @@ nav a,
   }
 }
 
-.nav-projects:hover{
+.nav__projects:hover {
   cursor: pointer;
   color: $light-gray;
-
 }
 
-.nav-list__projects:hover {
+.nav__projects-list:hover {
   background-color: $light-gray;
   color: $dark-gray;
   a {
@@ -167,6 +189,6 @@ nav a,
   }
 }
 
-.nav-list__projects--hide {
+.nav__projects-list--hide {
   display: block;
 }

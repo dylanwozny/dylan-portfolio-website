@@ -10,13 +10,17 @@ p {
   h1 {
     color: $primary-color;
   }
-
-  section {
-    margin-bottom: 6rem;
-  }
 }
 
-.project-desc {
+//-----------------------------------------------------------//
+// --------------------- Project image and text -----------------------------//
+//----------------------------------------------------------//
+
+.project {
+  margin-bottom: 6rem;
+}
+
+.project__container {
   margin-right: 8%;
   box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
     0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
@@ -25,7 +29,7 @@ p {
     color: $secondary-color;
     padding: 1.5rem;
   }
-  .project-desc__content {
+  .project__content {
     display: flex;
     flex-wrap: wrap;
     svg {
@@ -54,40 +58,71 @@ p {
       object-fit: contain;
       background-color: $dark-gray;
     }
-    .project-desc__img {
+    .project__img {
       flex-basis: 500px;
       flex-shrink: 10;
       flex-grow: 10;
       position: relative;
 
-      > .project-desc__btn__container {
+      > .project__btn-container {
         width: 100%;
         height: 11rem;
         position: absolute;
         bottom: 1rem;
         left: 10%;
         padding-top: auto;
+        margin-bottom: 3rem;
+        
       }
     }
   }
 
-  .project-desc__btn {
+  //-----------------------------------------------------------//
+  // --------------------- Button desktop ----------------------//
+  //----------------------------------------------------------//
+
+  .project__btn {
+    margin-top: 1.5rem;
     margin-left: calc(100% - 240px);
   }
 
-  .project-desc__btn:hover {
+  .project__btn:hover {
     margin-left: calc(100% - 220px);
   }
 }
 
-.project-skills {
+//-----------------------------------------------------------//
+// --------------------- Button bottom mobile ----------------------//
+//----------------------------------------------------------//
+
+.project__btn--bottom {
+  display: none;
+  overflow: visible;
+  width: calc(100% + 3.5rem);
+}
+
+@media (max-width: 500px) {
+  .project__btn-container {
+    display: none;
+  }
+
+  .project__btn--bottom {
+    display: block;
+  }
+}
+
+//-----------------------------------------------------------//
+// --------------------- Skills -----------------------------//
+//----------------------------------------------------------//
+
+.project__skills {
   box-shadow: 0 16px 18px -12px rgba(0, 0, 0, 0.56),
     0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-color: $white;
   padding: 1.5rem;
   position: relative;
 
-  .project-skills__list {
+  .project__list {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -106,24 +141,5 @@ p {
       width: 4rem;
       height: 4.5rem;
     }
-  }
-}
-
-.btn-single {
-}
-
-.project-desc__btn__container--bottom {
-  display: none;
-  overflow: visible;
-  width: calc(100% + 3.5rem);
-}
-
-@media (max-width: 500px) {
-  .project-desc__btn__container {
-    display: none;
-  }
-
-  .project-desc__btn__container--bottom {
-    display: block;
   }
 }

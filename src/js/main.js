@@ -1,25 +1,27 @@
 // REDO THIS AS GOOD JQUERY
+// Break into different files, and use es5 modules to import into one file
+//www.youtube.com/watch?v=cRHQNNcYf6s
 //---------------------------------------------------//
 // ------------------ nav bar logic -------------------//
 //---------------------------------------------------//
 $(document).ready(function () {
-  var button = $(".nav-btn");
-  var arrowButton = $(".nav-arrow");
+  var button = $(".js-ham-btn");
+  var arrowButton = $(".js-nav-arrow");
   var navBar = $("nav");
   var projectToggle = $("#navProjects");
-  var projectMenu = $(".nav-list__projects");
+  var projectMenu = $(".js-nav-projects");
 
   projectToggle.click((e) => {
     e.preventDefault();
-    projectMenu.toggleClass("nav-list__projects--hide");
+    projectMenu.toggleClass("nav__projects-list--hide");
   });
 
   arrowButton.click((e) => {
-    navBar.toggleClass("nav-show");
+    navBar.toggleClass("nav--show");
   });
 
   button.click((e) => {
-    navBar.toggleClass("nav-show");
+    navBar.toggleClass("nav--show");
   });
 
   // link you JQuery in your html and try out a solution!
@@ -40,16 +42,15 @@ $(document).ready(function () {
   // const searchReset = $(".frm-group > a");
 
   // ----------grab the image div and convert to array-------------//
-  const imageContainer = $(".skillCards__card--display");
+  const imageContainer = $(".js-skills__card--display");
   const imagesContainerArray = Array.from(imageContainer);
 
   // -------event on search input--------//
   tagSearch.on("input", (e) => {
-    // return search value, remove whitespaces
-    let searchValue = (tagSearch.textContent = e.target.value).replace(
-      / /g,
-      ""
-    );
+    // return search value, remove whitespaces and convert to lower case
+    let searchValue = (tagSearch.textContent = e.target.value)
+      .replace(/ /g, "")
+      .toLowerCase();
 
     // go through each container in images and gram the p value
     imagesContainerArray.forEach((Element) => {
@@ -61,9 +62,9 @@ $(document).ready(function () {
 
       // do this if inside tag values match the search
       if (!insideTag.includes(searchValue)) {
-        $(Element).addClass("hidden");
+        $(Element).addClass("skills__card--hidden");
       } else {
-        $(Element).removeClass("hidden");
+        $(Element).removeClass("skills__card--hidden");
       }
     });
   });

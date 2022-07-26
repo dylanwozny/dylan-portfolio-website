@@ -1,15 +1,11 @@
 @use "../utilities/" as *;
 
-.bio {
-}
-
-.bio-grid-fluid {
-  // @include sectionGrid(1rem, 56px, 4, 8);
+.bio__grid-fluid {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
 
-  .grid-item1 {
+  .bio__grid-item1 {
     flex: 4 1 383px;
     max-width: 503px;
 
@@ -18,9 +14,7 @@
     }
   }
 
-  .grid-item2 {
-    // margin-bottom: 4.5rem;
-    // padding: 1.5rem;
+  .bio__grid-item2 {
     flex: 8 1 783px;
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +22,7 @@
     flex-direction: row;
     position: relative;
 
-    &__logo {
+    .bio__logo {
       background-image: url("../../assets/img/space.jpg");
       background-size: cover;
       padding: 1rem;
@@ -41,19 +35,19 @@
       }
     }
 
-    &__img {
+    .bio__profile-pic {
       // width: 18rem;
       height: 18rem;
       width: 19.5rem;
     }
 
-    &__links {
+    .bio__links {
       position: absolute;
       left: 29rem;
       bottom: 0rem;
     }
 
-    .btn {
+    .bio__btn {
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
@@ -86,7 +80,7 @@
       }
     }
 
-    .btn:nth-child(1) {
+    .bio__btn:nth-child(1) {
       width: 20rem;
       div {
         width: 8rem;
@@ -95,14 +89,14 @@
       }
     }
 
-    .btn:hover {
+    .bio__btn:hover {
       width: 17rem;
       span {
         margin-right: 2rem;
       }
     }
 
-    .btn:nth-child(1):hover {
+    .bio__btn:nth-child(1):hover {
       width: 22rem;
       span {
         margin-right: 2rem;
@@ -111,37 +105,38 @@
   }
 }
 
+// re-arrange the content to fit mobile and tablet views
 @media (max-width: 1000px) {
-  .bio-grid-fluid {
+  .bio__grid-fluid {
     gap: 1.5rem;
-    .grid-item2 {
+    .bio__grid-item2 {
       flex-direction: column;
 
-      &__links {
+      .bio__links {
         left: 0rem;
         bottom: 0rem;
       }
 
-      &__img {
+      .bio__profile-pic {
         margin-bottom: 12rem;
         height: auto;
         width: 17rem;
       }
 
-      &__logo {
+      .bio__logo {
         width: 17rem;
         background-image: url("../../assets/img/space-sm.jpg");
       }
 
-      .btn {
+      .bio__btn {
         width: 13rem;
       }
 
-      .btn:nth-child(2) {
+      .bio__btn:nth-child(2) {
         margin-bottom: 0;
       }
 
-      .btn:nth-child(1) {
+      .bio__btn:nth-child(1) {
         width: 17rem;
         div {
           width: 5rem;

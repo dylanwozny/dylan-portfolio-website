@@ -1,13 +1,12 @@
 @use "../utilities/" as *;
 
-.bio {
-}
-
-.project-grid-fluid {
-  .project-grid-fluid__header {
+//----------------------------------------------//
+//----------layout and styling------------------//
+//----------------------------------------------//
+.project__grid-fluid {
+  .project__header {
     background-color: $primary-color;
     padding: 1.5rem 1.5rem;
-    box-shadow: 15 15 15 15;
     p {
       color: $light-gray;
     }
@@ -17,8 +16,8 @@
   grid-gap: 1.5rem 1rem;
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
 
-  .grid-item1,
-  .grid-item2 {
+  .project__grid-item1,
+  .project__grid-item2 {
     height: 22.5rem;
     background-size: cover;
     box-shadow: inset 0 0 0 2000px hsla(228deg, 26%, 18%, 40%);
@@ -39,16 +38,16 @@
     }
   }
 
-  .grid-item1 {
+  // Back imgs
+  .project__grid-item1 {
     background-image: url("../../assets/img/sass-editor.JPG");
   }
-
-  .grid-item1:hover {
-    svg {
-      animation: rotation 2500ms infinite;
-    }
+  .project__grid-item2 {
+    background-image: url("../../assets/img/chef-design/chef-site-3x.jpg");
   }
-
+  //----------------------------------------------//
+  //----------SVG Animations---------------------//
+  //----------------------------------------------//
   // Cog animation
   @keyframes rotation {
     0% {
@@ -111,21 +110,26 @@
     }
   }
 
-  .grid-item2 {
-    background-image: url("../../assets/img/chef-design/chef-site-3x.jpg");
-  }
-
-  .grid-item1:hover,
-  .grid-item2:hover {
+  //---------------------------------------------------//
+  //----------SVG Hover Animations---------------------//
+  //---------------------------------------------------//
+  .project__grid-item1:hover,
+  .project__grid-item2:hover {
     background-position-x: 0rem;
     svg {
       width: 10rem;
     }
   }
 
-  .grid-item2:hover {
+  .project__grid-item2:hover {
     svg {
       animation: pen-write 3000ms infinite;
+    }
+  }
+
+  .project__grid-item1:hover {
+    svg {
+      animation: rotation 2500ms infinite;
     }
   }
 }

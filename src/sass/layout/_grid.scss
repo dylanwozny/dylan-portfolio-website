@@ -26,6 +26,7 @@
 
 /* margin area for grid */
 .page-grid {
+  margin-top: 4.5rem;
   display: grid;
   grid-template-columns: 1fr minmax(min-content, $grid-mid-width) 1fr;
   // for navabr when in large screen view
@@ -49,6 +50,7 @@
 @media (min-width: 900px) {
   .page-grid {
     padding-left: 120px;
+    margin-top: 0rem;
   }
 }
 
