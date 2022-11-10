@@ -176,7 +176,7 @@ p {
 
 figcaption {
   font-size: $txt-md;
-  font-size: clamp($txt-sml, 3.5vw, $txt-md);
+  font-size: clamp($txt-sml, 3.5vw, $txt-mdsml);
 }
 
 .contact {
