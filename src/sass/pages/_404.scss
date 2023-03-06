@@ -1,0 +1,34 @@
+@use "../utilities/vars" as *;
+
+.banner-404 {
+  text-align: center;
+  h1 {
+    color: $primary-color;
+  }
+
+  p {
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+  }
+
+  svg {
+    transform: rotate(180deg);
+    width: 2rem;
+  }
+
+  a {
+    display: flex;
+    margin: 0 auto;
+    max-width: 11rem;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  a:hover {
+    color: white;
+    background-color: $primary-color;
+    fill: white;
+  }
+}
