@@ -2,6 +2,8 @@
 
 Dylan wozny's static portfolio website
 
+SRC COMPILES INTO PUBLIC. DEV ON SRC THEN UPLOAD PUBLIC TO SERVER
+
 ## SASS
 
 Using cmd line for sass compiling. No extension.

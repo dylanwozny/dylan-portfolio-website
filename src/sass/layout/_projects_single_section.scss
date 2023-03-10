@@ -12,6 +12,40 @@ p {
   }
 }
 
+.projects__header {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.484),
+      $primary-color
+    ),
+    url("../../assets/img/sass-editor.JPG");
+
+  color: $white;
+  background-color: $primary-color;
+  background-position: left;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 2000px hsla(228, 26%, 18%, 0.598);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+
+  .projects__header--alignment {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  h1 {
+    color: $white;
+    margin-top: 0rem;
+  }
+  svg {
+    fill: $secondary-color;
+    max-width: 10.5rem;
+    width: 25%;
+    min-width: 7.5rem;
+  }
+}
+
 //-----------------------------------------------------------//
 // --------------------- Project image and text -----------------------------//
 //----------------------------------------------------------//
@@ -63,20 +97,18 @@ p {
       flex-shrink: 10;
       flex-grow: 10;
       position: relative;
-
-      > .project__btn-container {
-        width: 100%;
-        height: 11rem;
-        position: absolute;
-        bottom: 1rem;
-        left: 10%;
-        padding-top: auto;
-        margin-bottom: 3rem;
-        
-      }
     }
   }
 
+  .project__btn-container {
+    width: 100%;
+    height: 11rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 10%;
+    padding-top: auto;
+    margin-bottom: 3rem;
+  }
   //-----------------------------------------------------------//
   // --------------------- Button desktop ----------------------//
   //----------------------------------------------------------//
@@ -87,7 +119,7 @@ p {
   }
 
   .project__btn:hover {
-    margin-left: calc(100% - 220px);
+    width: 17rem;
   }
 }
 
@@ -101,9 +133,15 @@ p {
   width: calc(100% + 3.5rem);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 920px) {
   .project__btn-container {
     display: none;
+  }
+
+  .project__list {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .project__btn--bottom {
@@ -124,11 +162,13 @@ p {
 
   .project__list {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0rem 1.5rem 3rem 1.5rem;
     text-align: center;
+    width: 75%;
+    max-width: 50rem;
 
     li {
       display: flex;

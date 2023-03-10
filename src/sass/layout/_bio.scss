@@ -132,6 +132,13 @@
         width: 13rem;
       }
 
+      .bio__btn:hover {
+        width: 13rem;
+        span {
+          margin-right: 0rem;
+        }
+      }
+
       .bio__btn:nth-child(2) {
         margin-bottom: 0;
       }
@@ -140,6 +147,15 @@
         width: 17rem;
         div {
           width: 5rem;
+        }
+      }
+      .bio__btn:nth-child(1):hover {
+        width: 17rem;
+        div {
+          width: 5rem;
+        }
+        span {
+          margin-right: 0rem;
         }
       }
     }
