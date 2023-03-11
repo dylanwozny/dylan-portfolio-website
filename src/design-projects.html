@@ -162,7 +162,7 @@
           </a>
         </li>
         <li><a href="./index.html">Home</a></li>
-        <li id="navProjects" class="nav__projects">Projects</li>
+        <li id="navProjects" class="nav__projects accent">Projects</li>
         <li class="nav__projects-list js-nav-projects">
           <ul>
             <li><a href="./design-projects.html">Design Projects</a></li>
@@ -175,15 +175,52 @@
       </ul>
     </nav>
     <div class="page-grid">
-      <header class="page-grid__wrapper">
-        <h1>Design Projects</h1>
-        <p>
-          These projects were created by wire-framing, sketching and the
-          creative process. Projects adhere to design principle of
-          alignment,contrast,proximity and repetition. Most of the projects here
-          were assembled in Adobe XD and Photo-shop. Projects are not coded and
-          simply link to images of the prototypes.
-        </p>
+      <header
+        class="page-grid__wrapper page-grid__wrapper--fullspan projects__header projects__header--design"
+      >
+        <div class="the_wrap">
+          <div class="projects__header--alignment">
+            <svg viewBox="3 1 25 30">
+              <g>
+                <rect
+                  x="9"
+                  y="1"
+                  class="sharpcorners_een"
+                  width="13"
+                  height="2"
+                ></rect>
+                <path
+                  class="sharpcorners_een"
+                  d="M24.598,12.998C22.318,11.098,21,8.284,21,5.316V4H10v1.316c0,2.968-1.318,5.782-3.598,7.682
+                    L4,15l11,16V19.95c-1.141-0.232-2-1.24-2-2.45c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5c0,1.209-0.859,2.218-2,2.45V31l11-16
+                    L24.598,12.998z"
+                ></path>
+              </g>
+              <g>
+                <rect
+                  x="9"
+                  y="1"
+                  class="sharpcorners_een"
+                  width="13"
+                  height="2"
+                ></rect>
+                <path
+                  class="sharpcorners_een"
+                  d="M24.598,12.998C22.318,11.098,21,8.284,21,5.316V4H10v1.316c0,2.968-1.318,5.782-3.598,7.682
+                    L4,15l11,16V19.95c-1.141-0.232-2-1.24-2-2.45c0-1.381,1.119-2.5,2.5-2.5s2.5,1.119,2.5,2.5c0,1.209-0.859,2.218-2,2.45V31l11-16
+                    L24.598,12.998z"
+                ></path>
+              </g>
+            </svg>
+            <div>
+              <h1>Design Projects</h1>
+              <p>
+                Prototyped projects, consists of images and live Adobe Xd
+                versions.
+              </p>
+            </div>
+          </div>
+        </div>
       </header>
       <main class="page-grid__wrapper">
         <h2>Projects</h2>
@@ -195,8 +232,11 @@
                 <p>
                   This project is a wire-frame prototype for my CRUD content
                   management system. Design theories taken into consideration:
-                  proximity,repitition, composition, hierarchy, vertical rhythm,
-                  typo-graphic scale, WCAG 2.0 contrast rules and color theory.
+                  <span
+                    >proximity,repitition, composition, hierarchy, vertical
+                    rhythm, typo-graphic scale, WCAG 2.0 contrast rules and
+                    color theory.</span
+                  >
                 </p>
               </div>
               <div class="project__img">
@@ -277,10 +317,7 @@
             <h3>Chef Site: homepage Design</h3>
             <div class="project__content">
               <div>
-                <p>
-                  This project is a homepage design for the chef site. Directly
-                  related to the projects above.
-                </p>
+                <p>This project is a homepage design for a chef site.</p>
               </div>
               <div class="project__img">
                 <img
@@ -359,7 +396,7 @@
                 <p>
                   This project is a wireframe prototype for a chef site web
                   application where the visitor can submit a recipe.
-                  <span>UI/UX</span>
+                  <span>UX</span>
                   skills are used here.
                 </p>
               </div>

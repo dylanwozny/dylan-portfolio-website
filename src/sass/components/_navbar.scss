@@ -192,3 +192,14 @@ nav a,
 .nav__projects-list--hide {
   display: block;
 }
+
+.accent {
+  background-color: $dark-accent;
+  color: $white;
+  font-weight: bold;
+  font-family: "neris";
+  font-weight: normal;
+  font-style: normal;
+  overflow: visible;
+  width: 8rem;
+}

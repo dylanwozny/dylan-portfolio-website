@@ -44,7 +44,7 @@
     .bio__links {
       position: absolute;
       left: 29rem;
-      bottom: 0rem;
+      bottom: 2rem;
     }
 
     .bio__btn {
@@ -75,7 +75,7 @@
       }
 
       span {
-        width: 6rem;
+        width: 7rem;
         transition: margin 0.2s ease-in-out;
       }
     }
@@ -129,11 +129,14 @@
       }
 
       .bio__btn {
-        width: 13rem;
+        width: 15rem;
+        svg {
+          width: 4rem;
+        }
       }
 
       .bio__btn:hover {
-        width: 13rem;
+        width: 15rem;
         span {
           margin-right: 0rem;
         }
@@ -146,13 +149,13 @@
       .bio__btn:nth-child(1) {
         width: 17rem;
         div {
-          width: 5rem;
+          width: 2rem;
         }
       }
       .bio__btn:nth-child(1):hover {
         width: 17rem;
         div {
-          width: 5rem;
+          width: 2rem;
         }
         span {
           margin-right: 0rem;

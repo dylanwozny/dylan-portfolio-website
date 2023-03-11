@@ -1,14 +1,20 @@
 // -------------color variables------------
 // Naming Convention: name it something that can still
 // be accurate if color is changed.
-$primary-color: hsl(228, 26%, 18%);
-$secondary-color: hsl(48, 100%, 74%);
+$primary-color: rgb(48, 56, 83);
+$secondary-color: rgb(248, 220, 123);
 $dark-accent: hsl(24, 100%, 25%);
 
 $old-white: hsl(0, 13%, 95%);
-$white: hsl(0, 0%, 100%);
+$white: rgb(247, 247, 246);
 $light-gray: hsl(0, 0%, 97%);
 $dark-gray: hsl(228, 5%, 19%);
+
+$light: #f7f7f6;
+$light-accent: #ffe47a;
+$main-brand-color: rgb(74, 84, 93);
+$dark-accent: #8e9caa;
+$darkshades: #303853;
 
 // -------------Layout variables------------
 
@@ -32,7 +38,7 @@ $txt-sml: 1rem;
 $txt-xs: 0.667rem;
 
 // --------spacing vars--------
-$font-baseline: 100%;
+$font-baseline: 112.5%;
 $baseline-1: 1.5rem;
 $baseline-2: 3rem;
 $baseline-3: 4.5rem;
