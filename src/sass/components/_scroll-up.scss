@@ -21,7 +21,11 @@
   border: solid 6px $primary-color;
   background: $primary-color;
 
-  svg{
+  svg {
     fill: $light-gray;
   }
+}
+
+.no-bottom {
+  margin-bottom: 1.5rem !important;
 }

@@ -1,0 +1,79 @@
+@use "../utilities" as *;
+
+/*------------------------------------
+#Footer Layout
+------------------------------------*/
+
+footer.page-footer {
+  background-color: $primary-color;
+  color: $light;
+  margin-bottom: 0rem;
+}
+
+.footer__flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0rem 0rem 0rem;
+  > * {
+    width: 15rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+/*------------------------------------
+#Footer Nav
+------------------------------------*/
+
+.page-footer__nav {
+  a {
+    text-align: left;
+    color: $light;
+    margin-bottom: 0rem;
+    padding: 0rem;
+    line-height: 2;
+  }
+
+  li {
+    max-width: 7rem;
+  }
+  li:hover {
+    a {
+      color: $dark-accent;
+    }
+  }
+}
+
+/*------------------------------------
+#Socials
+------------------------------------*/
+
+.page-footer__socials {
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+  li {
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+  }
+  svg {
+    width: 3rem;
+    fill: $light;
+  }
+}
+
+/*------------------------------------
+#Signature
+------------------------------------*/
+.page-footer__sig {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 10rem;
+  svg {
+    width: 2rem;
+  }
+
+  p {
+    padding-top: 0.2rem;
+  }
+}

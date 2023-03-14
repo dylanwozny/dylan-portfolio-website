@@ -106,7 +106,6 @@
       0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     transition: opacity 0.5s ease-in-out;
-    transition: padding 0.35s ease-out;
 
     svg {
       width: 75%;
@@ -115,6 +114,7 @@
       max-height: 6rem;
       height: 6.5rem;
       margin-bottom: 1.5rem;
+      transition: padding 0.35s ease-out;
     }
     // hide card when does not match search
     &--hidden {
@@ -126,9 +126,11 @@
   @media (min-width: 1000px) {
     .skills__card:hover {
       background-color: $dark-accent;
-      padding: 2rem;
       color: $white;
       font-weight: bold;
+      svg {
+        padding: 1rem;
+      }
     }
   }
 }

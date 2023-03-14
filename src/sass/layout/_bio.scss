@@ -43,14 +43,31 @@
 
     .bio__links {
       position: absolute;
-      left: 29rem;
-      bottom: 2rem;
+      left: 28rem;
+      bottom: 5rem;
+    }
+
+    .bio__links a:first-child {
+      width: 18rem;
+    }
+
+    .bio__links a:first-child:hover {
+      width: 19.5rem;
+    }
+
+    .bio__links a:last-child {
+      width: 14rem;
+    }
+
+    .bio__links a:last-child:hover {
+      width: 15.5rem;
     }
 
     .bio__btn {
       margin-bottom: 1.5rem;
       display: flex;
       align-items: center;
+      justify-content: space-between;
       gap: 1rem;
       width: 15rem;
       background-color: $primary-color;
@@ -71,35 +88,18 @@
 
       svg:last-child {
         text-align: right;
-        width: 2rem;
+        width: 1.5rem;
+        fill: $light;
       }
 
       span {
-        width: 7rem;
         transition: margin 0.2s ease-in-out;
       }
-    }
 
-    .bio__btn:nth-child(1) {
-      width: 20rem;
       div {
-        width: 8rem;
-
-        text-align: right;
-      }
-    }
-
-    .bio__btn:hover {
-      width: 17rem;
-      span {
-        margin-right: 2rem;
-      }
-    }
-
-    .bio__btn:nth-child(1):hover {
-      width: 22rem;
-      span {
-        margin-right: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
       }
     }
   }
@@ -114,7 +114,8 @@
 
       .bio__links {
         left: 0rem;
-        bottom: 0rem;
+        bottom: -1.5rem;
+        margin-top: 1.5rem;
       }
 
       .bio__profile-pic {
@@ -134,32 +135,20 @@
           width: 4rem;
         }
       }
-
-      .bio__btn:hover {
-        width: 15rem;
-        span {
-          margin-right: 0rem;
-        }
-      }
-
-      .bio__btn:nth-child(2) {
-        margin-bottom: 0;
-      }
-
-      .bio__btn:nth-child(1) {
+      .bio__links a:first-child {
         width: 17rem;
-        div {
-          width: 2rem;
-        }
       }
-      .bio__btn:nth-child(1):hover {
+
+      .bio__links a:first-child:hover {
         width: 17rem;
-        div {
-          width: 2rem;
-        }
-        span {
-          margin-right: 0rem;
-        }
+      }
+
+      .bio__links a:last-child {
+        width: 14rem;
+      }
+
+      .bio__links a:last-child:hover {
+        width: 14rem;
       }
     }
   }

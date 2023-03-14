@@ -134,11 +134,11 @@ p {
 
   .project__btn {
     margin-top: 1.5rem;
-    margin-left: calc(100% - 240px);
+    margin-left: calc(100% - 290px);
   }
 
   .project__btn:hover {
-    width: 17rem;
+    width: 16.5rem;
   }
 }
 
@@ -165,6 +165,20 @@ p {
 
   .project__btn--bottom {
     display: block;
+  }
+}
+
+//button fit screen
+@media (min-width: 500px) {
+  .project__btn-container {
+    .project__btn {
+      margin-top: 1.5rem;
+      margin-left: calc(100% - 290px);
+    }
+
+    .project__btn:hover {
+      width: 17rem;
+    }
   }
 }
 
