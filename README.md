@@ -6,6 +6,8 @@ SRC COMPILES INTO PUBLIC. DEV ON SRC THEN UPLOAD PUBLIC TO SERVER
 
 ## SASS
 
+7-1 file folder structure. https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+
 Using cmd line for sass compiling. No extension.
 
 compile command: 'npm start'
@@ -14,7 +16,7 @@ PUBLIC FOLDER NOTE: Js seems to be copying over now...
 
 Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
 
-STYLE GUIDE USED: Airbnb + BEM
+STYLE GUIDE USED: OOCSS and BEM
 
 https://google.github.io/styleguide/htmlcssguide.html
 

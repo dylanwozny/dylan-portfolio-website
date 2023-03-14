@@ -1,0 +1,12 @@
+/*------------------------------------
+#Css for keeping footer anchored to bottom
+------------------------------------*/
+
+.stretch-page-height {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  main {
+    flex-grow: 1;
+  }
+}
