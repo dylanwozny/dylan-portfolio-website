@@ -35,7 +35,7 @@
   /* regular section with margin */
   &__wrapper {
     grid-column: 2 / span 1;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
     padding-left: 5%;
     padding-right: 5%;
 
@@ -51,6 +51,9 @@
   .page-grid {
     padding-left: 120px;
     margin-top: 0rem;
+    &__wrapper {
+      margin-bottom: 6rem;
+    }
   }
 }
 
