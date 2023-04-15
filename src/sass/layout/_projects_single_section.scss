@@ -134,13 +134,18 @@ p {
 
   .project__btn {
     margin-top: 1.5rem;
-    margin-left: calc(100% - 290px);
+    margin-left: calc(100% - 260px);
     border: 2px solid rgb(48, 56, 83);
+    font-size: 1.25rem;
+    width: 14rem;
+    svg {
+      width: 2rem;
+    }
   }
 
   .project__btn:hover,
   .project__btn:focus-within {
-    width: 16.5rem;
+    width: 14.5rem;
     background-color: hsl(0deg, 0%, 97%);
     color: rgb(48, 56, 83);
     border: 2px solid rgb(48, 56, 83);
@@ -182,9 +187,15 @@ p {
     .project__btn {
       margin-top: 1.5rem;
       margin-left: calc(100% - 290px);
+      font-size: 1.5rem;
+      width: 16rem;
+      svg {
+        width: 3rem;
+      }
     }
 
-    .project__btn:hover {
+    .project__btn:hover,
+    .project__btn:focus-within {
       width: 17rem;
     }
   }
