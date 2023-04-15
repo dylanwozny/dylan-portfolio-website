@@ -90,11 +90,11 @@ html {
 \*------------------------------------*/
 h1,
 h2,
-h5,
-label {
+h5 {
   font-family: "league_spartanbold";
   font-weight: normal;
   font-style: normal;
+  letter-spacing: 1px;
 }
 
 h3,
@@ -111,6 +111,12 @@ figcaption,
 span {
   font-family: "nerislight";
   font-weight: normal;
+  font-style: normal;
+}
+
+.banner-caption-txt {
+  font-family: "neris";
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -133,6 +139,7 @@ h4 {
 h5 {
   font-weight: normal;
   font-size: $txt-md;
+  margin-bottom: 0.75rem ;
 }
 
 h3,

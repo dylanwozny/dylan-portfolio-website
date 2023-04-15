@@ -16,7 +16,7 @@ footer.page-footer {
   padding: 3rem 0rem 0rem 0rem;
   > * {
     width: 15rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -36,9 +36,10 @@ footer.page-footer {
   li {
     max-width: 7rem;
   }
-  li:hover {
+  li:hover,
+  li:focus-within {
     a {
-      color: $dark-accent;
+      text-decoration: underline;
     }
   }
 }
@@ -59,8 +60,14 @@ footer.page-footer {
     width: 2rem;
     fill: $light;
   }
-}
 
+  a:hover,
+  a:focus-within {
+    svg {
+      fill: $secondary-color;
+    }
+  }
+}
 /*------------------------------------
 #Signature
 ------------------------------------*/

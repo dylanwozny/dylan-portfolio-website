@@ -27,7 +27,7 @@
       background-size: cover;
       padding: 1rem;
       max-height: 18rem;
-      max-width: 19.5rem;
+      max-width: 17rem;
       justify-content: center;
 
       display: flex;
@@ -52,6 +52,12 @@
     }
 
     .bio__links a:first-child:hover {
+      background-color: hsl(0deg, 0%, 97%);
+      color: rgb(48, 56, 83);
+      border: 2px solid rgb(48, 56, 83);
+      svg {
+        fill: $primary-color !important;
+      }
       width: 19.5rem;
     }
 
@@ -61,10 +67,17 @@
 
     .bio__links a:last-child:hover {
       width: 15.5rem;
+      background-color: hsl(0deg, 0%, 97%);
+      color: rgb(48, 56, 83);
+      border: 2px solid rgb(48, 56, 83);
+      svg {
+        fill: $primary-color !important;
+      }
     }
 
     .bio__btn {
       margin-bottom: 1.5rem;
+      border: 2px solid rgb(48, 56, 83);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -125,12 +138,11 @@
       }
 
       .bio__logo {
-        width: 17rem;
         background-image: url("../../assets/img/space-sm.jpg");
       }
 
       .bio__btn {
-        width: 15rem;
+        width: 15rem !important;
         svg {
           width: 4rem;
         }
@@ -151,5 +163,14 @@
         width: 14rem;
       }
     }
+  }
+}
+
+.bio__btn.btn:focus-within {
+  background-color: hsl(0deg, 0%, 97%);
+  color: rgb(48, 56, 83);
+  border: 2px solid rgb(48, 56, 83);
+  svg {
+    fill: $primary-color !important;
   }
 }

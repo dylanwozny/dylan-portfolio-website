@@ -9,7 +9,6 @@
   border: 0;
 }
 
-
 // <div class="overlay-drk"></div>
 .overlay-drk {
   position: absolute;
@@ -17,4 +16,8 @@
   height: 100%;
   width: 100%;
   opacity: 0.1;
+}
+
+.line-height-squeeze {
+  line-height: 1;
 }

@@ -12,7 +12,7 @@ Using cmd line for sass compiling. No extension.
 
 compile command: 'npm start'
 
-PUBLIC FOLDER NOTE: Js seems to be copying over now...
+PUBLIC FOLDER NOTE: JS DOES NOT COPY. USE PUBLIC FOR JS.
 
 Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
 

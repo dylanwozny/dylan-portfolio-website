@@ -23,10 +23,20 @@
 .ham__btn {
   background-color: $white;
   padding: 0rem;
+  padding: 0.5rem;
 
   svg {
     fill: $primary-color;
     width: 2.5rem;
+  }
+}
+
+.ham__btn:hover,
+.ham__btn:focus {
+  cursor: pointer;
+  background-color: $primary-color;
+  svg {
+    fill: $white;
   }
 }
 
@@ -38,7 +48,7 @@
   position: fixed;
   top: 0rem;
   left: -15rem;
-  width: 7.5rem;
+  width: 120px;
   background-color: $white;
   transition: 0.5s;
   height: 100vh;
@@ -51,8 +61,14 @@
     padding: 0rem;
   }
 
-  .nav__arrow:hover {
+  .nav__arrow:hover,
+  .nav__arrow:focus {
     background-color: $white;
+    cursor: pointer;
+    background-color: $primary-color;
+    svg {
+      fill: $white;
+    }
   }
 
   .nav__arrow {
@@ -81,13 +97,18 @@ nav {
 }
 
 nav {
-  li:hover {
+  li:hover,
+  li:focus-within {
     background-color: $primary-color;
     a {
       color: $light-gray;
     }
   }
 }
+
+//----------------------------------------
+//-----------------FOCUS NAV LI---------------------
+//----------------------------------------
 
 .nav__arrow {
   background-color: $white;
@@ -110,6 +131,20 @@ nav a,
   text-align: center;
   padding: 1rem 0rem;
   color: $dark-gray;
+}
+
+.nav__projects {
+  border: solid 2px $primary-color;
+}
+
+//-----------------Active when clicked---------------------
+.nav__menu {
+  .active {
+    background-color: $white;
+    color: $primary-color;
+    width: 8rem;
+    padding-right: 0.75rem;
+  }
 }
 
 /*------------------------------------
@@ -164,14 +199,21 @@ nav a,
   background-color: $light-gray;
   box-shadow: inset 0.1rem 0.1rem 0.2rem $dark-gray;
   transition: height 0.5s;
+
   a {
     display: block;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
   }
 }
 
 .nav__projects:hover {
   cursor: pointer;
-  color: $light-gray;
+  color: $primary-color;
+  background-color: $light-gray;
+  border: solid 2px $primary-color;
+  width: 8rem;
+  padding-right: 0.75rem;
 }
 
 .nav__projects-list:hover {
@@ -180,7 +222,8 @@ nav a,
   a {
     color: $dark-gray;
   }
-  li:hover {
+  li:hover,
+  li:focus {
     background-color: $primary-color;
     color: $light-gray;
     a {
@@ -201,5 +244,6 @@ nav a,
   font-weight: normal;
   font-style: normal;
   overflow: visible;
-  width: 8rem;
+  width: 7.25rem;
+  border-radius: 0px 5px 5px 0px;
 }

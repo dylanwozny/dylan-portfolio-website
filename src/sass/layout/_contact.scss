@@ -1,7 +1,7 @@
 @use "../utilities/vars" as *;
 
 .contact {
-  h2{
+  h2 {
     margin-bottom: 0rem;
   }
   .contact__form {
@@ -14,6 +14,13 @@
     input {
       display: block;
       margin-bottom: 1.5rem;
+      width: 100%;
+      padding: 1rem 0.5rem;
+    }
+
+    button:focus-within {
+      color: $primary-color;
+      background-color: $white;
     }
   }
 

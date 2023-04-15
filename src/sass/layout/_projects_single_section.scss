@@ -135,10 +135,18 @@ p {
   .project__btn {
     margin-top: 1.5rem;
     margin-left: calc(100% - 290px);
+    border: 2px solid rgb(48, 56, 83);
   }
 
-  .project__btn:hover {
+  .project__btn:hover,
+  .project__btn:focus-within {
     width: 16.5rem;
+    background-color: hsl(0deg, 0%, 97%);
+    color: rgb(48, 56, 83);
+    border: 2px solid rgb(48, 56, 83);
+    svg {
+      fill: $primary-color !important;
+    }
   }
 }
 
@@ -225,11 +233,10 @@ p {
       transition: background-color 0.5s ease-in-out;
     }
 
-    li:hover,
-    p:hover {
-      background-color: $dark-accent;
+    li:hover {
+      border: 2px solid $dark-accent;
+      background-color: $white;
       cursor: pointer;
-      color: $light;
     }
 
     svg {

@@ -116,10 +116,19 @@
   //----------SVG Hover Animations---------------------//
   //---------------------------------------------------//
   .project__grid-item1:hover,
+  .project__grid-item1:focus-within,
+  .project__grid-item2:focus-within,
   .project__grid-item2:hover {
+    h3 {
+      text-decoration: underline;
+    }
+
+    p {
+      text-decoration: underline;
+    }
     background-position-x: 0rem;
     svg {
-      width: 10rem;
+      width: 8rem;
     }
   }
 

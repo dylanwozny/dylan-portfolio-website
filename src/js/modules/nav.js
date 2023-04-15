@@ -23,6 +23,8 @@ function navMenu() {
   button.click((e) => {
     navBar.toggleClass("nav--show");
   });
+
+  console.log("hello");
 }
 
 //--------------------------------------------------------//
