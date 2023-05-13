@@ -13,6 +13,7 @@
   border-width: 2px;
   border-style: solid;
   cursor: pointer;
+  border: 2px solid rgb(48, 56, 83) !important;
 }
 
 // button variations
@@ -92,5 +93,3 @@
 .btn-bio {
   @include buttonBg($dark-accent, $dark-accent, $light-gray, $true);
 }
-
-

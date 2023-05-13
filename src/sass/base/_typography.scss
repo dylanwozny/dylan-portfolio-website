@@ -11,31 +11,9 @@
     url("#{$font-url}leaguespartan-bold-webfont.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-// @font-face {
-//   font-family: "nerisblack";
-//   src: url("#{$font-url}neris-black-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-black-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "nerisblack_italic";
-//   src: url("#{$font-url}neris-blackitalic-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-blackitalic-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
-// @font-face {
-//   font-family: "nerisbold_italic";
-//   src: url("#{$font-url}neris-bolditalic-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-bolditalic-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: "nerislight";
@@ -43,6 +21,7 @@
     url("#{$font-url}neris-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -51,6 +30,7 @@
     url("#{$font-url}neris-lightitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -59,15 +39,9 @@
     url("#{$font-url}neris-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-// @font-face {
-//   font-family: "nerissemibold_italic";
-//   src: url("#{$font-url}neris-semibolditalic-webfont.woff2") format("woff2"),
-//     url("#{$font-url}neris-semibolditalic-webfont.woff") format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
 
 @font-face {
   font-family: "neristhin";
@@ -75,6 +49,7 @@
     url("#{$font-url}neris-thin-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /*------------------------------------*\

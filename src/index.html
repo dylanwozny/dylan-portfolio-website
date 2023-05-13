@@ -14,33 +14,25 @@
 
     <link
       rel="preload"
-      href="./assets/fonts/leaguespartan-bold-webfont.woff"
-      as="font"
-    />
-    <link
-      rel="preload"
       href="./assets/fonts/leaguespartan-bold-webfont.woff2"
       as="font"
+      type="font/woff2"
     />
-    <link
-      rel="preload"
-      href="./assets/fonts/neris-thin-webfont.woff"
-      as="font"
-    />
+
     <link
       rel="preload"
       href="./assets/fonts/neris-thin-webfont.woff2"
       as="font"
+      crossorigin
+      type="font/woff2"
     />
-    <link
-      rel="preload"
-      href="./assets/fonts/neris-light-webfont.woff"
-      as="font"
-    />
+
     <link
       rel="preload"
       href="./assets/fonts/neris-light-webfont.woff2"
       as="font"
+      crossorigin
+      type="font/woff2"
     />
   </head>
   <body>
@@ -63,7 +55,7 @@
           </g>
         </svg>
       </button>
-      <a href="./index.html">
+      <a href="./index.html" aria-label="go to home page">
         <svg viewBox="0 0 225 225">
           <g id="DW-logo-outline" transform="translate(5 5)">
             <path
@@ -178,17 +170,148 @@
     <div class="page-grid">
       <header class="banner page-grid__wrapper page-grid__wrapper--fullspan">
         <img
-          alt="angular staircases inside a building, with a lady going up an escalator"
+          class="banner-img"
+          alt="Blue pen, notebook and a laptop"
           srcset="
             ./assets/img/home/banner-sml.webp  700w,
             ./assets/img/home/banner-md.webp  1400w,
             ./assets/img/home/banner-xl.webp  2500w
           "
         />
+        <div class="banner-img__shade"></div>
         <div class="the_wrap">
           <div class="banner-content">
-            <h1>Dylan Wozny</h1>
-            <p class="banner-caption-txt">Web Developer</p>
+            <div class="banner__intro">
+              <h1>Dylan Wozny</h1>
+              <p class="banner-caption-txt">Web Developer</p>
+            </div>
+            <div class="banner_project-container">
+              <div class="banner__project">
+                <div class="projects__header--alignment">
+                  <svg viewBox="2 2 20 20">
+                    <rect x="0" fill="none" width="24" height="24"></rect>
+                    <g>
+                      <path
+                        d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <div>
+                    <h2>Latest Project</h2>
+                    <p>PHP content management system Mountain website</p>
+                  </div>
+                </div>
+                <div class="project__img">
+                  <div class="project__img-innerContainer">
+                    <img
+                      loading="lazy"
+                      class="project__img-picture"
+                      alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                      srcset="
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-home-2x.jpg  502w,
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-home-2x.jpg  732w,
+                        ./assets/img/php-mountain/php-mtn-home.jpg              1200w,
+                        ./assets/img/php-mountain/php-mtn-home.jpg              1379w
+                      "
+                      style="display: none"
+                    />
+                    <img
+                      class="project__img-picture img-active"
+                      alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                      srcset="
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-dash-2x.jpg  502w,
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-dash-2x.jpg  732w,
+                        ./assets/img/php-mountain/php-mtn-dash.jpg              1200w,
+                        ./assets/img/php-mountain/php-mtn-dash.jpg              1379w
+                      "
+                      style="display: block"
+                    />
+                    <img
+                      class="project__img-picture"
+                      alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                      srcset="
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-search-2x.jpg  502w,
+                        ./assets/img/php-mountain/2x-mobile/php-mtn-search-2x.jpg  732w,
+                        ./assets/img/php-mountain/php-mtn-search.jpg              1200w,
+                        ./assets/img/php-mountain/php-mtn-search.jpg              1379w
+                      "
+                      style="display: none"
+                    />
+                  </div>
+                  <div class="project__banner-button">
+                    <a
+                      href="https://www.dylanwozny.com/mountain-site/public/index.php"
+                      class="btn btn-action project__btn ui-link"
+                    >
+                      <span>View Project</span>
+                      <div>
+                        <svg viewBox="0 0 12 11">
+                          <path
+                            d="M7.2.6l-.7.7 3.2 3.2H.3v1h9.4L6.5 8.7l.7.7L11.6 5z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="project__img-slider-buttons">
+                    <div
+                      id="previous"
+                      class="project__img--slide-prev js--slideButton"
+                    >
+                      <svg
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 490 490"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <polygon
+                            points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                          ></polygon>
+                        </g>
+                      </svg>
+                    </div>
+                    <ul class="project__imgs-slider-thumbs">
+                      <li>
+                        <img
+                          src="./assets/img/php-mountain/thumbs/php-mtn-home-thumb.jpg"
+                          alt=""
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/img/php-mountain/thumbs/php-mtn-dash-thumb.jpg"
+                          alt=""
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="./assets/img/php-mountain/thumbs/php-mtn-search-thumb.jpg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                    <div
+                      id="next"
+                      class="project__img--slide-next js--slideButton"
+                    >
+                      <svg
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 490 490"
+                        xml:space="preserve"
+                      >
+                        <g>
+                          <polygon
+                            points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                          ></polygon>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -313,25 +436,26 @@
         <h2>Project Portfolio</h2>
         <div class="project__grid-fluid">
           <div class="project__grid-item1">
-            <span
-              role="img"
-              aria-label="Code editer view. Dark themed code editor with colorful code text."
-            ></span>
-            <a href="./developer-projects.html" class="">
-              <header class="project__header">
-                <h3>Developer Projects</h3>
-                <p>Projects that are fully functional and coded.</p>
-              </header>
-
-              <svg viewBox="2 2 20 20">
-                <rect x="0" fill="none" width="24" height="24" />
-                <g>
-                  <path
-                    d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
-                  />
-                </g>
-              </svg>
-            </a>
+            <div class="project__item-container">
+              <span
+                role="img"
+                aria-label="Code editer view. Dark themed code editor with colorful code text."
+              ></span>
+              <a href="./developer-projects.html" class="">
+                <header class="project__header">
+                  <h3>Developer Projects</h3>
+                  <p>Projects that are fully functional and coded.</p>
+                </header>
+                <svg viewBox="2 2 20 20">
+                  <rect x="0" fill="none" width="24" height="24" />
+                  <g>
+                    <path
+                      d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
           </div>
 
           <div class="project__grid-item2">
@@ -936,7 +1060,7 @@
         </form>
       </section>
       <section class="page-grid__wrapper no-bottom">
-        <button id="btnScroll" class="btn-scroll">
+        <button id="btnScroll" class="btn-scroll" aria-label="scroll to top">
           <svg x="0px" y="0px" viewBox="0 0 490 490" xml:space="preserve">
             <g>
               <polygon

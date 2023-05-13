@@ -3,27 +3,127 @@
 // positioned image as background
 .banner {
   position: relative;
-  box-shadow: inset 0 0 0 2000px hsla(227.5, 26.1%, 18%, 0.78);
-  img {
+  .banner-img {
     position: absolute;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 36rem;
     //object-fit resizes image
     object-fit: cover;
+    background-position: center;
     top: 0;
     left: 0;
+    // max-height: 30rem;
+    aspect-ratio: 5/2;
+  }
+
+  .banner-img__shade {
+    position: absolute;
+    inset: 0;
+    background-color: $primary-color;
+    z-index: -1;
+    opacity: 0.5;
+    height: 36rem;
+  }
+  .banner__project {
+    background: white;
+    max-width: 35rem;
+    border-radius: 55px 55px 15px 15px;
+    box-shadow: $box-shadow-light;
+    margin-right: 0rem;
+  }
+
+  .banner_project-container {
+    padding-top: 3rem;
+  }
+
+  .project__img-innerContainer {
+    margin: 0rem;
+  }
+  .project__img {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__img-slider-buttons {
+    margin: 0rem;
+    padding: 0.75rem 0rem;
+    background-color: $gray;
+  }
+
+  .projects__header--alignment {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    row-gap: 0rem;
+    flex-wrap: wrap;
+    background-color: $primary-color;
+    padding: 1.5rem;
+    border-radius: 15px 15px 0px 0px;
+    color: $white;
+
+    svg {
+      width: 10%;
+      max-width: 7.5rem;
+      min-width: 3rem;
+      fill: $secondary-color;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0rem;
   }
 }
 
 // banner layout
 .banner-content {
   padding-top: clamp(6rem, 10vw, 13.5rem);
-  padding-bottom: clamp(3rem, 10vw, 7.5rem);
-  min-height: 15rem;
+  display: grid;
+  grid-gap: 1.5rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(550px, 100%), 1fr));
+  gap: 3rem;
 
   h1 {
     margin-top: 0rem;
+  }
+}
+
+.banner {
+  .btn {
+    margin-bottom: 0rem;
+    margin: 0 auto;
+    width: 12rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    svg {
+      width: 1.5rem;
+    }
+  }
+
+  .btn:hover,
+  .btn:focus {
+    background-color: $white;
+    color: $primary-color;
+
+    svg {
+      fill: $primary-color;
+    }
+  }
+
+  .project__banner-button {
+    background-color: $gray;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    order: 1;
+    border-radius: 0px 0px 15px 15px;
+  }
+}
+
+@media (min-width: 700px) {
+  .banner-img,
+  .banner-img__shade {
+    height: 56rem;
   }
 }
 
@@ -37,4 +137,59 @@
 .the_wrap {
   max-width: 1540px;
   margin: 0 auto;
+}
+
+@media (min-width: 1050px) {
+  .banner {
+    .banner__project {
+      margin-right: 1rem;
+    }
+
+    .banner-img,
+    .banner-img__shade {
+      height: 53rem;
+    }
+
+    .project__img {
+      display: block;
+    }
+    .btn {
+      position: absolute;
+      bottom: 13.5rem;
+      margin-left: calc(100% - 13rem);
+      margin-bottom: 1rem;
+      width: 15rem;
+    }
+    svg {
+      width: 3rem;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background-color: $white;
+      color: $primary-color;
+      width: 17rem;
+
+      svg {
+        fill: $primary-color;
+      }
+    }
+    .project__banner-button {
+      position: relative;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .project__img-slider-buttons {
+      border-radius: 0px 0px 15px 15px;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .banner {
+    .banner_project-container {
+      padding-top: 10.5rem;
+    }
+  }
 }

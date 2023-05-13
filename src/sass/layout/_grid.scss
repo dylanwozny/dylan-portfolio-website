@@ -26,7 +26,7 @@
 
 /* margin area for grid */
 .page-grid {
-  margin-top: 4.5rem;
+  margin-top: 3.5rem;
   display: grid;
   grid-template-columns: 1fr minmax(min-content, $grid-mid-width) 1fr;
   // for navabr when in large screen view
@@ -35,7 +35,7 @@
   /* regular section with margin */
   &__wrapper {
     grid-column: 2 / span 1;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     padding-left: 5%;
     padding-right: 5%;
 
