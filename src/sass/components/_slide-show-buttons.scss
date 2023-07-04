@@ -1,15 +1,39 @@
 @use "../utilities" as *;
 
+
+
+// image carosul
+
+.banner .project__img-innerContainer {
+  position: relative;
+}
+
+.project__img-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.project__img-picture.img-active {
+  opacity: 1;
+}
+
 .project__img--slide-prev,
 .project__img--slide-next {
   transition: background-color 0.25s ease-in-out;
   background-color: $white;
   // background-color: $primary-color;
-  padding: 1rem !important;
+
   border-radius: 50%;
   border: solid 2px $primary-color;
   margin: 1.5rem;
   width: 4rem;
+
   svg {
     transform: rotate(270deg);
     fill: $primary-color;
@@ -19,11 +43,20 @@
   }
 }
 
+.project__img--slide-next {
+  padding: 1rem 1rem 1rem 1.25rem !important;
+}
+
+.project__img--slide-prev {
+  padding: 1rem 1rem 1rem 1.1rem !important;
+}
+
 .project__img--slide-prev:hover,
 .project__img--slide-next:hover,
 .project__img--slide-prev:focus-within,
 .project__img--slide-next:focus-within {
   cursor: pointer;
+
   svg {
     fill: rgba(1, 1, 1, 0.4);
   }
@@ -41,6 +74,7 @@
   align-items: center;
   margin: 1.5rem;
   gap: 1rem;
+
   * {
     margin: 0rem !important;
   }
@@ -52,10 +86,17 @@
   margin: 1.5rem;
   gap: 0.5rem;
   justify-content: center;
+
   li {
     border: solid 2px $primary-color;
     width: 3rem;
   }
+
+  .current {
+    border: 4px solid $primary-color;
+
+  }
+
 }
 
 @media (max-width: 520px) {
@@ -63,9 +104,12 @@
     justify-content: center;
     width: 100%;
   }
+
+
   .project__img-slider-buttons {
     flex-wrap: wrap;
   }
+
   .project__img--slide-prev,
   .project__img--slide-next {
     order: 2;
