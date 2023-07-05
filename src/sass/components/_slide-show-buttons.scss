@@ -53,12 +53,13 @@
 
 .project__img--slide-prev:hover,
 .project__img--slide-next:hover,
-.project__img--slide-prev:focus-within,
-.project__img--slide-next:focus-within {
+.project__img--slide-prev:focus,
+.project__img--slide-next:focus {
   cursor: pointer;
+  background-color: $primary-color;
 
   svg {
-    fill: rgba(1, 1, 1, 0.4);
+    fill: $white;
   }
 }
 
@@ -95,6 +96,10 @@
   .current {
     border: 4px solid $primary-color;
 
+  }
+
+  img {
+    height: 100%;
   }
 
 }
