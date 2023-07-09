@@ -8,6 +8,16 @@
   position: relative;
 }
 
+.project__container .project__img-innerContainer {
+  position: relative;
+}
+
+.project__img-innerContainer:hover,
+.project__imgs-slider-thumbs li {
+  cursor: pointer;
+
+}
+
 .project__img-picture {
   position: absolute;
   top: 0;
@@ -54,7 +64,9 @@
 .project__img--slide-prev:hover,
 .project__img--slide-next:hover,
 .project__img--slide-prev:focus,
-.project__img--slide-next:focus {
+.project__img--slide-next:focus,
+.project__img--slide-prev:active,
+.project__img--slide-next:active {
   cursor: pointer;
   background-color: $primary-color;
 

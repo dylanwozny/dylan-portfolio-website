@@ -13,11 +13,9 @@ p {
 }
 
 .projects__header {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.484),
-      $primary-color
-    ),
+      $primary-color ),
     url("../../assets/img/sass-editor.jpg");
 
   color: $white;
@@ -34,35 +32,34 @@ p {
     gap: 1.5rem;
     flex-wrap: wrap;
   }
+
   h1 {
     color: $white;
     margin-top: 0rem;
   }
+
   svg {
     fill: $secondary-color;
     max-width: 10.5rem;
     width: 25%;
-    min-width: 7.5rem;
+    min-width: 2.5rem;
   }
 }
 
 .projects__header--dev {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.484),
-      $primary-color
-    ),
+      $primary-color ),
     url("../../assets/img/sass-editor.jpg");
 }
 
 .projects__header--design {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.484),
-      $primary-color
-    ),
+      $primary-color ),
     url("../../assets/img/chef-design/chef-site-3x.jpg");
 }
+
 //-----------------------------------------------------------//
 // --------------------- Project image and text -----------------------------//
 //----------------------------------------------------------//
@@ -89,15 +86,18 @@ p {
   border-radius: 0px 0px 15px 15px;
   margin-right: 8%;
   box-shadow: $box-shadow-light;
+
   h3 {
     background-color: $primary-color;
     color: $secondary-color;
     padding: 1.5rem;
     border-radius: 15px 15px 0px 0px;
   }
+
   .project__content {
     display: flex;
     flex-wrap: wrap;
+
     svg {
       width: 3rem;
     }
@@ -111,18 +111,20 @@ p {
       padding: 1.5rem;
     }
 
-    > div {
+    >div {
       flex-basis: 350px;
       flex-shrink: 1;
       flex-grow: 1;
       background-color: $light-gray;
     }
+
     .project__img {
       flex-basis: 500px;
       flex-shrink: 10;
       flex-grow: 10;
       position: relative;
     }
+
     // allows image to resize in a pleasing way 962 x 541
     .project__img--picture {
       width: 100%;
@@ -155,6 +157,7 @@ p {
     padding-top: auto;
     margin-bottom: 3rem;
   }
+
   //-----------------------------------------------------------//
   // --------------------- Button desktop ----------------------//
   //----------------------------------------------------------//
@@ -165,6 +168,7 @@ p {
     border: 2px solid rgb(48, 56, 83);
     font-size: 1.25rem;
     width: 14rem;
+
     svg {
       width: 2rem;
     }
@@ -176,6 +180,7 @@ p {
     background-color: hsl(0deg, 0%, 97%);
     color: rgb(48, 56, 83);
     border: 2px solid rgb(48, 56, 83);
+
     svg {
       fill: $primary-color !important;
     }
@@ -216,6 +221,7 @@ p {
       margin-left: calc(100% - 290px);
       font-size: 1.5rem;
       width: 16rem;
+
       svg {
         width: 3rem;
       }
@@ -239,6 +245,7 @@ p {
   padding: 1.5rem;
   position: relative;
   border-radius: 0px 0px 15px 15px;
+
   h4 {
     margin-bottom: 0.75rem;
   }
@@ -300,9 +307,11 @@ p {
       text-align: center;
       width: 75%;
       max-width: 50rem;
+
       svg {
         width: 2.5rem;
       }
+
       li {
         display: flex;
         flex-direction: column;

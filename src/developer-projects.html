@@ -41,7 +41,6 @@
       href="./assets/fonts/neris-light-webfont.woff2"
       as="font"
     />
-     	
   </head>
   <body class="projects-page">
     <header class="ham">
@@ -176,27 +175,29 @@
       </ul>
     </nav>
     <div class="page-grid">
-      <header class="page-grid__wrapper page-grid__wrapper--fullspan projects__header projects__header--dev">
+      <header
+        class="page-grid__wrapper page-grid__wrapper--fullspan projects__header projects__header--dev"
+      >
         <div class="the_wrap">
           <div class="projects__header--alignment">
             <svg viewBox="2 2 20 20">
               <rect x="0" fill="none" width="24" height="24"></rect>
               <g>
-                <path d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"></path>
+                <path
+                  d="M20 12c0-.568-.06-1.122-.174-1.656l1.834-1.612-2-3.464-2.322.786c-.82-.736-1.787-1.308-2.86-1.657L14 2h-4l-.48 2.396c-1.07.35-2.04.92-2.858 1.657L4.34 5.268l-2 3.464 1.834 1.612C4.06 10.878 4 11.432 4 12s.06 1.122.174 1.656L2.34 15.268l2 3.464 2.322-.786c.82.736 1.787 1.308 2.86 1.657L10 22h4l.48-2.396c1.07-.35 2.038-.92 2.858-1.657l2.322.786 2-3.464-1.834-1.613c.113-.535.174-1.09.174-1.657zm-8 4c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"
+                ></path>
               </g>
             </svg>
             <div>
               <h1>Developer Projects</h1>
               <p>
-                These projects are finished, coded and functional. You can either view
-                the Web Project live or view the git repository on github.
+                These projects are finished, coded and functional. You can
+                either view the Web Project live or view the git repository on
+                github.
               </p>
             </div>
           </div>
-
         </div>
-
-
       </header>
       <main class="page-grid__wrapper">
         <h2>Projects</h2>
@@ -206,30 +207,104 @@
             <div class="project__content">
               <div>
                 <p>
-                  This is a <span>CRUD</span> Web App with <span>Login</span> and
-                  <span>Search</span> capability.The Mountain list can be filtered
-                  on the homepage and features pagination. Logged in
-                  users can access an admin page and add, update and delete
-                  mountains.
+                  This is a <span>CRUD</span> Web App with
+                  <span>Login</span> and <span>Search</span> capability.The
+                  Mountain list can be filtered on the homepage and features
+                  pagination. Logged in users can access an admin page and add,
+                  update and delete mountains.
                 </p>
               </div>
-              <div class="project__img">
-
+              <div class="project__img" id="carousel-1">
                 <div class="project__img-innerContainer">
+                  <div></div>
                   <img
+                    loading="lazy"
                     class="project__img-picture"
                     alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
                     srcset="
                       ./assets/img/php-mountain/2x-mobile/php-mtn-home-2x.jpg  502w,
-                      ./assets/img/php-mountain/2x-mobile/php-mtn-home-2x.jpg   732w,
-                      ./assets/img/php-mountain/php-mtn-home.jpg   1200w,
-                      ./assets/img/php-mountain/php-mtn-home.jpg   1379w
+                      ./assets/img/php-mountain/2x-mobile/php-mtn-home-2x.jpg  732w,
+                      ./assets/img/php-mountain/php-mtn-home.jpg              1200w,
+                      ./assets/img/php-mountain/php-mtn-home.jpg              1379w
+                    "
+                  />
+                  <img
+                    class="project__img-picture"
+                    alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                    srcset="
+                      ./assets/img/php-mountain/2x-mobile/php-mtn-dash-2x.jpg  502w,
+                      ./assets/img/php-mountain/2x-mobile/php-mtn-dash-2x.jpg  732w,
+                      ./assets/img/php-mountain/php-mtn-dash.jpg              1200w,
+                      ./assets/img/php-mountain/php-mtn-dash.jpg              1379w
+                    "
+                  />
+                  <img
+                    class="project__img-picture"
+                    alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                    srcset="
+                      ./assets/img/php-mountain/2x-mobile/php-mtn-search-2x.jpg  502w,
+                      ./assets/img/php-mountain/2x-mobile/php-mtn-search-2x.jpg  732w,
+                      ./assets/img/php-mountain/php-mtn-search.jpg              1200w,
+                      ./assets/img/php-mountain/php-mtn-search.jpg              1379w
                     "
                   />
                 </div>
-
-
-
+                <div class="project__img-slider-buttons">
+                  <div
+                    id="previous"
+                    class="project__img--slide-prev js--slideButton"
+                  >
+                    <svg
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 490 490"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                  <ul class="project__imgs-slider-thumbs">
+                    <li>
+                      <img
+                        src="./assets/img/php-mountain/thumbs/php-mtn-home-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/img/php-mountain/thumbs/php-mtn-dash-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/img/php-mountain/thumbs/php-mtn-search-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                  <div
+                    id="next"
+                    class="project__img--slide-next js--slideButton"
+                  >
+                    <svg
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 490 490"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project__skills">
@@ -237,10 +312,7 @@
               <ul class="project__list">
                 <li>
                   <figure>
-                    <svg
-                      viewBox="0 -60.5 256 256"
-                      version="1.1"
-                    >
+                    <svg viewBox="0 -60.5 256 256" version="1.1">
                       <defs>
                         <radialGradient
                           id="radialGradient-1"
@@ -502,21 +574,102 @@
                   Functionality of this web app includes: Client and server side
                   validation with easy user experience error messages. Sign in
                   options include a google provider and standard email. Give it
-                  a try and sign in with an email, no need to provide a real one.
-                  You can also login with the google provider.
+                  a try and sign in with an email, no need to provide a real
+                  one. You can also login with the google provider.
                 </p>
               </div>
-              <div class="project__img">
-                <img
-                  class="img-test"
-                  alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
-                  srcset="
-                    ./assets/img/web-app/web-app.jpg     502w,
-                    ./assets/img/web-app/web-app-1x.jpg  732w,
-                    ./assets/img/web-app/web-app-2x.jpg 1200w,
-                    ./assets/img/web-app/web-app-3x.jpg 1379w
-                  "
-                />
+              <div class="project__img" id="carousel-2">
+                <div class="project__img-innerContainer">
+                  <img
+                    class="project__img-picture"
+                    srcset="
+                      ./assets/img/web-app/web-app-front-0x.webp  500w,
+                      ./assets/img/web-app/web-app-front-1x.webp 1000w,
+                      ./assets/img/web-app/web-app-front-2x.webp 1200w
+                    "
+                    sizes="(min-width: 1142px) 50vw, 90vw"
+                    alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                    src="./assets/img/web-app/web-app-front-0x.webp  "
+                  />
+                  <img
+                    class="project__img-picture"
+                    srcset="
+                      ./assets/img/web-app/web-app-home-0x.webp  500w,
+                      ./assets/img/web-app/web-app-home-1x.webp 1000w,
+                      ./assets/img/web-app/web-app-home-2x.webp 1200w
+                    "
+                    sizes="(min-width: 1142px) 50vw, 90vw"
+                    alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                    src="./assets/img/web-app/web-app-home-0x.webp  "
+                  />
+                  <img
+                    class="project__img-picture"
+                    srcset="
+                      ./assets/img/web-app/web-app-edit-0x.webp  500w,
+                      ./assets/img/web-app/web-app-edit-1x.webp 1000w,
+                      ./assets/img/web-app/web-app-edit-2x.webp 1200w
+                    "
+                    sizes="(min-width: 1142px) 50vw, 90vw"
+                    alt="web app front page with a sign in and email text box. Title says 'to do list' and the color scheme is dark blue and white. "
+                    src="./assets/img/web-app/web-app-edit-0x.webp  "
+                  />
+                </div>
+                <div class="project__img-slider-buttons">
+                  <div
+                    id="previous"
+                    class="project__img--slide-prev js--slideButton"
+                  >
+                    <svg
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 490 490"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                  <ul class="project__imgs-slider-thumbs">
+                    <li>
+                      <img
+                        src="./assets/img/web-app/thumbs/web-app-edit-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/img/web-app/thumbs/web-app-home-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/img/web-app/thumbs/web-app-login-thumb.jpg"
+                        alt=""
+                      />
+                    </li>
+                  </ul>
+                  <div
+                    id="next"
+                    class="project__img--slide-next js--slideButton"
+                  >
+                    <svg
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 490 490"
+                      xml:space="preserve"
+                    >
+                      <g>
+                        <polygon
+                          points="0,332.668 245.004,82.631 490,332.668 413.507,407.369 245.004,235.402 76.493,407.369 		"
+                        ></polygon>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="project__skills">
@@ -836,9 +989,15 @@
                     <span>Repo</span>
                   </div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.5 36">
-                      <path data-name="Icon awesome-external-link-alt" d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"></path>
-                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 40.5 36"
+                    >
+                      <path
+                        data-name="Icon awesome-external-link-alt"
+                        d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"
+                      ></path>
+
                       <path
                         data-name="Icon awesome-external-link-alt"
                         d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"
@@ -1011,8 +1170,14 @@
                     <span>Repo</span>
                   </div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.5 36">
-                      <path data-name="Icon awesome-external-link-alt" d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"></path>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 40.5 36"
+                    >
+                      <path
+                        data-name="Icon awesome-external-link-alt"
+                        d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"
+                      ></path>
                     </svg>
                   </div>
                 </a>
@@ -1041,8 +1206,14 @@
                     <span>Repo</span>
                   </div>
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40.5 36">
-                      <path data-name="Icon awesome-external-link-alt" d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"></path>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 40.5 36"
+                    >
+                      <path
+                        data-name="Icon awesome-external-link-alt"
+                        d="M40.5,1.688v9a1.689,1.689,0,0,1-2.881,1.193L35.109,9.369,17.986,26.492a1.687,1.687,0,0,1-2.386,0L14.008,24.9a1.687,1.687,0,0,1,0-2.386L31.131,5.391l-2.51-2.511A1.689,1.689,0,0,1,29.814,0h9A1.687,1.687,0,0,1,40.5,1.688ZM28.619,19.04l-1.125,1.125A1.687,1.687,0,0,0,27,21.358V31.5H4.5V9H23.063a1.688,1.688,0,0,0,1.193-.494l1.125-1.125A1.688,1.688,0,0,0,24.188,4.5H3.375A3.375,3.375,0,0,0,0,7.875v24.75A3.375,3.375,0,0,0,3.375,36h24.75A3.375,3.375,0,0,0,31.5,32.625V20.233A1.687,1.687,0,0,0,28.619,19.04Z"
+                      ></path>
                     </svg>
                   </div>
                 </a>
@@ -1535,104 +1706,105 @@
         </button>
       </section>
       <footer
-      class="page-footer page-grid__wrapper page-grid__wrapper--fullspan footer"
-    >
-      <div class="the_wrap">
-        <div class="footer__flex-container">
-          <nav class="page-footer__nav">
-            <h5>Pages</h5>
-            <ul class="">
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./index.html#section-about">About</a></li>
-              <li><a href="./index.html#section-contact">Contact</a></li>
-              <li><a href="./index.html#section-project">Projects</a></li>
-            </ul>
-          </nav>
-          <div class="page-footer__socials">
-            <h5>Socials</h5>
-            <ul>
-              <li>
-                <a
-                  href="https://ca.linkedin.com/in/dylan-wozny-415b79224?trk=public_profile_samename-profile"
-                >
-                  <svg
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 455 455"
-                    style="enable-background: new 0 0 455 455"
+        class="page-footer page-grid__wrapper page-grid__wrapper--fullspan footer"
+      >
+        <div class="the_wrap">
+          <div class="footer__flex-container">
+            <nav class="page-footer__nav">
+              <h5>Pages</h5>
+              <ul class="">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#section-about">About</a></li>
+                <li><a href="./index.html#section-contact">Contact</a></li>
+                <li><a href="./index.html#section-project">Projects</a></li>
+              </ul>
+            </nav>
+            <div class="page-footer__socials">
+              <h5>Socials</h5>
+              <ul>
+                <li>
+                  <a
+                    href="https://ca.linkedin.com/in/dylan-wozny-415b79224?trk=public_profile_samename-profile"
                   >
-                    <g>
-                      <path
-                        d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
-                      ></path>
-                      <path
-                        d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
+                    <svg
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 455 455"
+                      style="enable-background: new 0 0 455 455"
+                    >
+                      <g>
+                        <path
+                          d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"
+                        ></path>
+                        <path
+                          d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z
                   M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087
                                    c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345
                                    c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537
                                    c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002
                                    z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/dylanwozny">
+                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
                       ></path>
-                    </g>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/dylanwozny">
-                  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"
-                    ></path>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="page-footer__sig">
-            <svg viewBox="0 0 235 235">
-              <g id="DW-logo-outline" transform="translate(5 5)">
-                <path
-                  id="Path_36"
-                  data-name="Path 36"
-                  d="M112.5,0A112.5,112.5,0,1,1,0,112.5,112.5,112.5,0,0,1,112.5,0Z"
-                  fill="#22273a"
-                  stroke="#f8f8f8"
-                  stroke-width="10"
-                ></path>
-                <path
-                  id="Path_1"
-                  data-name="Path 1"
-                  d="M226.833,248l18.232,36.3h-6.289l-13.168-27.179h-.253L210.33,284.3H204L224.342,248Z"
-                  transform="translate(-112.164 -136.445)"
-                  fill="#f5f2f2"
-                ></path>
-                <path
-                  id="Path_2"
-                  data-name="Path 2"
-                  d="M334.059,155.509l-24.94,84.1q0,1.037-1.21,1.037l-26.027.691a.993.993,0,0,1-1.124-1.124v-1.469a.993.993,0,0,1,1.124-1.124H292.86L317.8,158.88H306.822a.993.993,0,0,1-1.124-1.124v-1.469a.993.993,0,0,1,1.124-1.124l26.027-.691Q334.059,154.472,334.059,155.509Z"
-                  transform="translate(-154.368 -85.021)"
-                  fill="#f8f8f8"
-                ></path>
-                <path
-                  id="Path_3"
-                  data-name="Path 3"
-                  d="M100,155.509l24.94,84.1q0,1.037,1.21,1.037l26.027.691a.993.993,0,0,0,1.124-1.124v-1.469a.993.993,0,0,0-1.124-1.124H141.2L116.26,158.88h10.977a.993.993,0,0,0,1.124-1.124v-1.469a.993.993,0,0,0-1.124-1.124l-26.027-.691Q100,154.472,100,155.509Z"
-                  transform="translate(-54.982 -85.021)"
-                  fill="#f5f2f2"
-                ></path>
-              </g>
-            </svg>
-            <p>Site by Dylan wozny</p>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="page-footer__sig">
+              <svg viewBox="0 0 235 235">
+                <g id="DW-logo-outline" transform="translate(5 5)">
+                  <path
+                    id="Path_36"
+                    data-name="Path 36"
+                    d="M112.5,0A112.5,112.5,0,1,1,0,112.5,112.5,112.5,0,0,1,112.5,0Z"
+                    fill="#22273a"
+                    stroke="#f8f8f8"
+                    stroke-width="10"
+                  ></path>
+                  <path
+                    id="Path_1"
+                    data-name="Path 1"
+                    d="M226.833,248l18.232,36.3h-6.289l-13.168-27.179h-.253L210.33,284.3H204L224.342,248Z"
+                    transform="translate(-112.164 -136.445)"
+                    fill="#f5f2f2"
+                  ></path>
+                  <path
+                    id="Path_2"
+                    data-name="Path 2"
+                    d="M334.059,155.509l-24.94,84.1q0,1.037-1.21,1.037l-26.027.691a.993.993,0,0,1-1.124-1.124v-1.469a.993.993,0,0,1,1.124-1.124H292.86L317.8,158.88H306.822a.993.993,0,0,1-1.124-1.124v-1.469a.993.993,0,0,1,1.124-1.124l26.027-.691Q334.059,154.472,334.059,155.509Z"
+                    transform="translate(-154.368 -85.021)"
+                    fill="#f8f8f8"
+                  ></path>
+                  <path
+                    id="Path_3"
+                    data-name="Path 3"
+                    d="M100,155.509l24.94,84.1q0,1.037,1.21,1.037l26.027.691a.993.993,0,0,0,1.124-1.124v-1.469a.993.993,0,0,0-1.124-1.124H141.2L116.26,158.88h10.977a.993.993,0,0,0,1.124-1.124v-1.469a.993.993,0,0,0-1.124-1.124l-26.027-.691Q100,154.472,100,155.509Z"
+                    transform="translate(-54.982 -85.021)"
+                    fill="#f5f2f2"
+                  ></path>
+                </g>
+              </svg>
+              <p>Site by Dylan wozny</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
     </div>
 
     <script
-			  src="https://code.jquery.com/jquery-3.6.4.min.js"
-			  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
-			  crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
