@@ -2,6 +2,12 @@
 
 Dylan wozny's static portfolio website
 
+built with:
+HTML
+CSS
+SASS
+jquery
+
 ## SASS
 
 Using cmd line for sass compiling. No extension.
