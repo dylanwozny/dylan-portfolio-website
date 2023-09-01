@@ -1,14 +1,6 @@
 # Portfolio-Website
 
-# TODO
-
-1. finish image carousal.
-2. finish lazy loading images and placeholder images (maybe not....)
-   https://css-tricks.com/the-complete-guide-to-lazy-loading-images/
-
 Dylan wozny's static portfolio website
-
-SRC COMPILES INTO PUBLIC. DEV ON SRC THEN UPLOAD PUBLIC TO SERVER
 
 ## SASS
 
