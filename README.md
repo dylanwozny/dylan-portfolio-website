@@ -2,15 +2,11 @@
 
 Dylan wozny's static portfolio website
 
-SRC COMPILES INTO PUBLIC. DEV ON SRC THEN UPLOAD PUBLIC TO SERVER
-
 ## SASS
 
 Using cmd line for sass compiling. No extension.
 
 compile command: 'npm start'
-
-PUBLIC FOLDER NOTE: Js seems to be copying over now...
 
 Json dependencies from https://thinkdobecreate.com/articles/minimum-static-site-sass-setup/
 
