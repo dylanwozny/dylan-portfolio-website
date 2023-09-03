@@ -123,14 +123,17 @@ p {
       flex-shrink: 10;
       flex-grow: 10;
       position: relative;
+
+      img {
+        object-position: top;
+      }
     }
 
     // allows image to resize in a pleasing way 962 x 541
     .project__img--picture {
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      object-position: center;
+      object-fit: contain;
       background-color: $dark-gray;
       display: none;
       position: relative;
@@ -138,6 +141,7 @@ p {
       transition: left 1s ease;
       z-index: -999;
       overflow: hidden;
+      object-position: top;
     }
 
     .img-active {
